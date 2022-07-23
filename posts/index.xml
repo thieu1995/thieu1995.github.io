@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Thieu&#39;s Blog</title>
+    <link>https://thieu1995.github.io/posts/</link>
+    <description>Recent content in Posts on Thieu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thieu1995.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ML Resources</title>
+      <link>https://thieu1995.github.io/2022/05/ml-resources/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/05/ml-resources/</guid>
+      <description>Need an invaluable MLOps resource?
+This website https://madewithml.com/ by Goku Mohandas will serve you for months
+Check out Made with ML:
+• Testing &amp;amp; Pipelines • Experiment Tracking &amp;amp; Reproducibility • Model Monitoring • Data Preprocessing • APIs
+and so much more!
+For example: https://madewithml.com/courses/foundations/neural-networks/
+💥 Getting Started with MLOps: https://hubs.la/Q019b1WW0
+Backpropagation in RNN Explained https://towardsdatascience.com/backpropagation-in-rnn-explained-bdf853b4e1c2</description>
+    </item>
+    
+    <item>
+      <title>Python Libraries</title>
+      <link>https://thieu1995.github.io/2022/05/python-libraries/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/05/python-libraries/</guid>
+      <description>A list of python libraries &amp;amp; frameworks! Source: @AfricaDataSch
+178 Python Projects with Source Code https://amankharwal.medium.com/130-python-projects-with-source-code-61f498591bb</description>
+    </item>
+    
+    <item>
+      <title>Mealpy Tutorials</title>
+      <link>https://thieu1995.github.io/2022/04/mealpy-tutorials/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/04/mealpy-tutorials/</guid>
+      <description>&lt;p&gt;Mealpy Tutorials&lt;/p&gt;
+&lt;p&gt;How to use Mealpy library to find global point for optimization problem&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet for Time Series Forecasting</title>
+      <link>https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/</guid>
+      <description>&lt;p&gt;List of state of the art papers, code, and other resources focus on time series forecasting.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet for Web Security</title>
+      <link>https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/</guid>
+      <description>&lt;p&gt;A comprehensive cheat sheet for web security&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Path for self-taught education in Computer Science</title>
+      <link>https://thieu1995.github.io/2021/03/path-for-self-taught-education-in-computer-science/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2021/03/path-for-self-taught-education-in-computer-science/</guid>
+      <description>&lt;p&gt;Path to a free self-taught education in Computer Science!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Tranquilpeak 0.5.3-BETA</title>
+      <link>https://thieu1995.github.io/2015/06/welcome-to-tranquilpeak-0.5.3-beta/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2015/06/welcome-to-tranquilpeak-0.5.3-beta/</guid>
+      <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s using Tranquilpeak Hugo Theme</title>
+      <link>https://thieu1995.github.io/2015/06/who-is-using-tranquilpeak-hugo-theme/</link>
+      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2015/06/who-is-using-tranquilpeak-hugo-theme/</guid>
+      <description>&lt;p&gt;Here you can find a list of the blogs that use Tranquilpeak theme, with different styles and customizations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Elements showcase</title>
+      <link>https://thieu1995.github.io/2015/05/elements-showcase/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2015/05/elements-showcase/</guid>
+      <description>&lt;p&gt;Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&amp;rsquo;s simple and elegant.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cover image showcase</title>
+      <link>https://thieu1995.github.io/2015/05/cover-image-showcase/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2015/05/cover-image-showcase/</guid>
+      <description>&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>highlighted code showcase</title>
+      <link>https://thieu1995.github.io/2015/03/highlighted-code-showcase/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2015/03/highlighted-code-showcase/</guid>
+      <description>&lt;p&gt;Tranquilpeak Hugo theme have its own theme to highlight source code. It&amp;rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tags plugins showcase</title>
+      <link>https://thieu1995.github.io/2014/10/tags-plugins-showcase/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2014/10/tags-plugins-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how tag plugins are displayed. See &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags&#34;&gt;docs&lt;/a&gt; for more info.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden social section showcase</title>
+      <link>https://thieu1995.github.io/2014/08/hidden-social-section-showcase/</link>
+      <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2014/08/hidden-social-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden tag section showcase</title>
+      <link>https://thieu1995.github.io/2014/08/hidden-tag-section-showcase/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2014/08/hidden-tag-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden pagination showcase</title>
+      <link>https://thieu1995.github.io/2014/08/hidden-pagination-showcase/</link>
+      <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2014/08/hidden-pagination-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the pagination is hidden.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Image gallery showcase</title>
+      <link>https://thieu1995.github.io/2013/02/image-gallery-showcase/</link>
+      <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2013/02/image-gallery-showcase/</guid>
+      <description>&lt;p&gt;And here is the image gallery!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

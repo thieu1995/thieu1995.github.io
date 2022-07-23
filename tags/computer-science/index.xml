@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer science on Thieu&#39;s Blog</title>
+    <link>https://thieu1995.github.io/tags/computer-science/</link>
+    <description>Recent content in computer science on Thieu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thieu1995.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ML Resources</title>
+      <link>https://thieu1995.github.io/2022/05/ml-resources/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/05/ml-resources/</guid>
+      <description>Need an invaluable MLOps resource?
+This website https://madewithml.com/ by Goku Mohandas will serve you for months
+Check out Made with ML:
+• Testing &amp;amp; Pipelines • Experiment Tracking &amp;amp; Reproducibility • Model Monitoring • Data Preprocessing • APIs
+and so much more!
+For example: https://madewithml.com/courses/foundations/neural-networks/
+💥 Getting Started with MLOps: https://hubs.la/Q019b1WW0
+Backpropagation in RNN Explained https://towardsdatascience.com/backpropagation-in-rnn-explained-bdf853b4e1c2</description>
+    </item>
+    
+    <item>
+      <title>Python Libraries</title>
+      <link>https://thieu1995.github.io/2022/05/python-libraries/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/05/python-libraries/</guid>
+      <description>A list of python libraries &amp;amp; frameworks! Source: @AfricaDataSch
+178 Python Projects with Source Code https://amankharwal.medium.com/130-python-projects-with-source-code-61f498591bb</description>
+    </item>
+    
+    <item>
+      <title>Mealpy Tutorials</title>
+      <link>https://thieu1995.github.io/2022/04/mealpy-tutorials/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/04/mealpy-tutorials/</guid>
+      <description>&lt;p&gt;Mealpy Tutorials&lt;/p&gt;
+&lt;p&gt;How to use Mealpy library to find global point for optimization problem&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet for Time Series Forecasting</title>
+      <link>https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/</guid>
+      <description>&lt;p&gt;List of state of the art papers, code, and other resources focus on time series forecasting.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet for Web Security</title>
+      <link>https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/</guid>
+      <description>&lt;p&gt;A comprehensive cheat sheet for web security&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Path for self-taught education in Computer Science</title>
+      <link>https://thieu1995.github.io/2021/03/path-for-self-taught-education-in-computer-science/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2021/03/path-for-self-taught-education-in-computer-science/</guid>
+      <description>&lt;p&gt;Path to a free self-taught education in Computer Science!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

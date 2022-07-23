@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cheat Sheet for Time Series Forecasting",
+  
+  "image": "https://thieu1995.github.io/post/2021-03/18-cheat-sheet-time-series/avatar.png",
+  
+  "datePublished": "2021-03-18T00:00:00Z",
+  "dateModified": "2021-03-18T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Nguyen Van Thieu",
+    
+    "image": "https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/thieu1995.github.io\/2021\/03\/cheat-sheet-for-time-series-forecasting\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thieu's Blog",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded"
+    }
+    
+  },
+  "description": "List of state of the art papers, code, and other resources focus on time series forecasting.\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.73.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Nguyen Van Thieu">
+<meta name="keywords" content="">
+<meta name="description" content="List of state of the art papers, code, and other resources focus on time series forecasting.">
+
+
+<meta property="og:description" content="List of state of the art papers, code, and other resources focus on time series forecasting.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cheat Sheet for Time Series Forecasting">
+<meta name="twitter:title" content="Cheat Sheet for Time Series Forecasting">
+<meta property="og:url" content="https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/">
+<meta property="twitter:url" content="https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/">
+<meta property="og:site_name" content="Thieu&#39;s Blog">
+<meta property="og:description" content="List of state of the art papers, code, and other resources focus on time series forecasting.">
+<meta name="twitter:description" content="List of state of the art papers, code, and other resources focus on time series forecasting.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2021-03-18T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2021-03-18T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="blog">
+    
+      <meta property="article:section" content="computer science">
+    
+      <meta property="article:section" content="IT">
+    
+  
+  
+    
+      <meta property="article:tag" content="learning path">
+    
+      <meta property="article:tag" content="computer science">
+    
+      <meta property="article:tag" content="time series prediction">
+    
+      <meta property="article:tag" content="IT">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=640">
+
+
+
+
+
+  <meta property="og:image" content="https://thieu1995.github.io/post/2021-03/18-cheat-sheet-time-series/avatar.png">
+  <meta property="twitter:image" content="https://thieu1995.github.io/post/2021-03/18-cheat-sheet-time-series/avatar.png">
+
+
+    <title>Cheat Sheet for Time Series Forecasting</title>
+
+    <link rel="icon" href="https://thieu1995.github.io/img/favicon_io/favicon.ico">
+    
+
+    
+
+    <link rel="canonical" href="https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://thieu1995.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://thieu1995.github.io/css/bootstrap-grid.min.css">
+      
+    
+      
+        <link rel="stylesheet"  href="https://thieu1995.github.io/css/my_style.css">
+      
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-224078006-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://thieu1995.github.io/" aria-label="Go to homepage">Thieu&#39;s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://thieu1995.github.io/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://thieu1995.github.io/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Nguyen Van Thieu</h4>
+        
+          <h5 class="sidebar-profile-bio">Lecturer at Faculty of Computer Science, Phenikaa University</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/cv" title="CV">
+    
+      <i class="sidebar-button-icon fa fa-address-card"></i>
+      
+      <span class="sidebar-button-desc">CV</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/research" title="Research">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-registered"></i>
+      
+      <span class="sidebar-button-desc">Research</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/publications" title="Publications">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tasks"></i>
+      
+      <span class="sidebar-button-desc">Publications</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/projects" title="Projects">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-solid fa-laptop-code"></i>
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/teaching" title="Teaching">
+    
+      <i class="sidebar-button-icon fa fa-university"></i>
+      
+      <span class="sidebar-button-desc">Teaching</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/categories/blog/" title="Blog">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-puzzle-piece"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/thieu1995" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://scholar.google.com/citations?user=nsTbdhgAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="GG Scholar">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-graduation-cap"></i>
+      
+      <span class="sidebar-button-desc">GG Scholar</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.researchgate.net/profile/Thieu_Nguyen6" target="_blank" rel="noopener" title="ResearchGate">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-flag-checkered"></i>
+      
+      <span class="sidebar-button-desc">ResearchGate</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://publons.com/researcher/3048975/nguyen-van-thieu/" target="_blank" rel="noopener" title="Publons">
+    
+      <i class="sidebar-button-icon fab fa-product-hunt"></i>
+      
+      <span class="sidebar-button-desc">Publons</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://loop.frontiersin.org/people/969519/" target="_blank" rel="noopener" title="Frontier">
+    
+      <i class="sidebar-button-icon fab fa-fonticons"></i>
+      
+      <span class="sidebar-button-desc">Frontier</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://orcid.org/0000-0001-9994-8747" target="_blank" rel="noopener" title="ORCID">
+    
+      <i class="sidebar-button-icon fab fa-opera"></i>
+      
+      <span class="sidebar-button-desc">ORCID</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Cheat Sheet for Time Series Forecasting
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2021-03-18T00:00:00Z">
+        
+  March 18, 2021
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/blog">blog</a>, 
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/computer-science">computer science</a>, 
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/it">IT</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>List of state of the art papers, code, and other resources focus on time series forecasting.</p>
+<h2 id="table-of-contents"><a href="">Table of Contents</a></h2>
+<ul>
+<li><a href="#M4-competition">M4 competition</a></li>
+<li><a href="#Kaggle-time-series-competition">Kaggle time series competition</a></li>
+<li><a href="#Papers">Papers</a></li>
+<li><a href="#Conferences">Conferences</a></li>
+<li><a href="#Theory-Resource">Theory-Resource</a></li>
+<li><a href="#Code-Resource">Code Resource</a></li>
+<li><a href="#Datasets">Datasets</a></li>
+</ul>
+<h2 id="m4-competition">M4-competition</h2>
+<p><a href="https://github.com/Mcompetitions/M4-methods">M4</a></p>
+<h4 id="papers">papers</h4>
+<ul>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0169207019301128">The M4 Competition: 100,000 time series and 61 forecasting methods</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0169207019301153">A hybrid method of exponential smoothing and recurrent neural networks for time series forecasting</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0169207019301190#b5">Weighted ensemble of statistical models</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0169207019300895">FFORMA: Feature-based forecast model averaging</a></li>
+</ul>
+<h2 id="kaggle-time-series-competition">Kaggle-time-series-competition</h2>
+<ul>
+<li><a href="https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting">Walmart Store Sales Forecasting (2014)</a></li>
+<li><a href="https://www.kaggle.com/c/walmart-recruiting-sales-in-stormy-weather">Walmart Sales in Stormy Weather (2015)</a></li>
+<li><a href="https://www.kaggle.com/c/rossmann-store-sales">Rossmann Store Sales (2015)</a></li>
+<li><a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting">Wikipedia Web Traffic Forecasting (2017)</a></li>
+<li><a href="https://www.kaggle.com/c/favorita-grocery-sales-forecasting">Corporación Favorita Grocery Sales Forecasting (2018)</a></li>
+<li><a href="https://www.kaggle.com/c/recruit-restaurant-visitor-forecasting">Recruit Restaurant Visitor Forecasting (2018)</a></li>
+<li><a href="https://www.kaggle.com/c/covid19-global-forecasting-week-5">COVID19 Global Forecasting (2020)</a></li>
+</ul>
+<h2 id="papers-1">Papers</h2>
+<h3 id="2021">2021</h3>
+<ul>
+<li>
+<p><a href="https://arxiv.org/abs/2012.07436">Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting</a> <code>AAAI 2021 best paper</code></p>
+<ul>
+<li>Zhou, et al.</li>
+<li><a href="https://github.com/zhouhaoyi/Informer2020">Code</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2012.08080.pdf">Coupled Layer-wise Graph Convolution for Transportation Demand Prediction</a> <code>AAAI 2021</code></p>
+<ul>
+<li>Ye, et al.</li>
+<li><a href="https://github.com/Essaim/CGCDemandPrediction">Code</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="2020">2020</h3>
+<ul>
+<li>
+<p><a href="https://proceedings.neurips.cc/paper/2020/file/c6b8c8d762da15fa8dbbdfb6baf9e260-Paper.pdf">Adversarial Sparse Transformer for Time Series Forecasting</a> <code>NeurIPS 2020</code></p>
+<ul>
+<li>Wu, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2010.13924">Benchmarking Deep Learning Interpretability in Time Series Predictions</a> <code>NeurIPS 2020</code></p>
+<ul>
+<li>Ismail, et al.</li>
+<li>[<a href="https://github.com/ayaabdelsalam91/TS-Interpretability-Benchmark">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://proceedings.neurips.cc/paper/2020/hash/021bbc7ee20b71134d53e20206bd6feb-Abstract.html">Deep reconstruction of strange attractors from time series</a> <code>NeurIPS 2020</code></p>
+<ul>
+<li>Gilpin, et al.</li>
+<li>[<a href="https://github.com/williamgilpin/fnn">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2002.10061">Rethinking 1D-CNN for Time Series Classification: A Stronger Baseline</a> <code>classification</code></p>
+<ul>
+<li>Tang, et al.</li>
+<li>[<a href="https://github.com/Wensi-Tang/OS-CNN/">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/profile/Shen_Liang7/publication/341691181_Active_Model_Selection_for_Positive_Unlabeled_Time_Series_Classification/links/5ed4ef09458515294527ad45/Active-Model-Selection-for-Positive-Unlabeled-Time-Series-Classification.pdf">Active Model Selection for Positive Unlabeled Time Series Classification</a></p>
+<ul>
+<li>Liang, et al.</li>
+<li>[<a href="https://github.com/sliang11/Active-Model-Selection-for-PUTSC">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://authors.elsevier.com/a/1b54P5aecShD%7EW">Unsupervised Phase Learning and Extraction from Quasiperiodic Multidimensional Time-series Data</a></p>
+<ul>
+<li>Prayook, et al.</li>
+<li>[<a href="https://github.com/koonyook/unsupervised-phase-supplementary">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://128.84.21.199/pdf/2005.11650.pdf">Connecting the Dots: Multivariate Time Series Forecasting withGraph Neural Networks</a></p>
+<ul>
+<li>Wu, et al.</li>
+<li>[<a href="https://github.com/nnzhan/MTGNN">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2005.08067.pdf">Forecasting with sktime: Designing sktime&rsquo;s New Forecasting API and Applying It to Replicate and Extend the M4 Study</a></p>
+<ul>
+<li>Löning, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2002.09545v1.pdf">RobustTAD: Robust Time Series Anomaly Detection viaDecomposition and Convolutional Neural Networks</a></p>
+<ul>
+<li>Gao, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2005.08926.pdf">Neural Controlled Differential Equations forIrregular Time Series</a></p>
+<ul>
+<li>Patrick Kidger, et al.</li>
+<li><code>University of Oxford</code></li>
+<li>[<a href="https://github.com/patrick-kidger/NeuralCDE">Code</a>]</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2004.13408.pdf">Time Series Forecasting With Deep Learning: A Survey</a></p>
+<ul>
+<li>Lim, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2004.10240.pdf">Neural forecasting: Introduction and literature overview</a></p>
+<ul>
+<li>Benidis, et al.</li>
+<li><code>Amazon Research</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2002.12478.pdf">Time Series Data Augmentation for Deep Learning: A Survey</a></p>
+<ul>
+<li>Wen, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/profile/Andrew_Harvey5/publication/335035033_Modeling_time_series_when_some_observations_are_zero/links/5d5ea1d5a6fdcc55e81ff273/Modeling-time-series-when-some-observations-are-zero.pdf">Modeling time series when some observations are zero</a><code>Journal of Econometrics 2020</code></p>
+<ul>
+<li>Andrew Harveyand Ryoko Ito.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2002.02887.pdf">Meta-learning framework with applications to zero-shot time-series forecasting</a></p>
+<ul>
+<li>Oreshkin, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/ecai20hr.pdf">Harmonic Recurrent Process for Time Series Forecasting</a></p>
+<ul>
+<li>Shao-Qun Zhang and Zhi-Hua Zhou.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/huawei-noah/BHT-ARIMA">Block Hankel Tensor ARIMA for Multiple Short Time Series Forecasting</a><code>AAAI 2020</code></p>
+<ul>
+<li>QIQUAN SHI, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/339362837_Learnings_from_Kaggle's_Forecasting_Competitions">Learnings from Kaggle&rsquo;s Forecasting Competitions</a></p>
+<ul>
+<li>Casper Solheim Bojer, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/8999262">An Industry Case of Large-Scale Demand Forecasting of Hierarchical Components</a></p>
+<ul>
+<li>Rodrigo Rivera-Castro, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2002.06103.pdf">Multi-variate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows</a></p>
+<ul>
+<li>Kashif Rasul, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2002.04155.pdf">ForecastNet: A Time-Variant Deep Feed-Forward Neural Network Architecture for Multi-Step-Ahead Time-Series Forecasting</a></p>
+<ul>
+<li>Joel Janek Dabrowski, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://pdfs.semanticscholar.org/810b/dfa0f63f03473be79556b90dc79a88a1f769.pdf">Anomaly detection for Cybersecurity: time series forecasting and deep learning</a><code>Good review about forecasting</code></p>
+<ul>
+<li>Giordano Colò.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://krvarshney.github.io/pubs/BhattacharjyaSGMVS_aaai2020.pdf">Event-Driven Continuous Time Bayesian Networks</a></p>
+<ul>
+<li>Debarun Bhattacharjya, et al.</li>
+<li><code>Research AI, IBM</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+</ul>
+<h2 id="conferences">Conferences</h2>
+<ul>
+<li><a href="https://iclr.cc/">ICLR</a></li>
+<li><a href="https://www.aaai.org/">AAAI</a></li>
+<li><a href="https://www.ijcai.org/">IJCAI</a></li>
+<li><a href="https://isf.forecasters.org/">ISF</a></li>
+<li><a href="https://nips.cc/">NeurIPS</a></li>
+<li><a href="https://icml.cc/">ICML</a></li>
+<li><a href="https://mofc.unic.ac.cy/m5-competition/">M5 Competition</a></li>
+</ul>
+<h2 id="theory-resource">Theory-Resource</h2>
+<ul>
+<li>
+<p><a href="https://ocw.mit.edu/courses/economics/14-384-time-series-analysis-fall-2013/">Time Series Analysis, MIT</a></p>
+</li>
+<li>
+<p><a href="https://www.udacity.com/course/time-series-forecasting--ud980">Time Series Forecasting, Udacity</a></p>
+</li>
+<li>
+<p><a href="https://www.coursera.org/learn/practical-time-series-analysis">Practical Time Series Analysis, Cousera</a></p>
+</li>
+<li>
+<p><a href="https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction">Sequences, Time Series and Prediction</a></p>
+</li>
+<li>
+<p><a href="https://www.coursera.org/projects/intro-time-series-analysis-in-r">Intro to Time Series Analysis in R, Cousera</a></p>
+</li>
+<li>
+<p><a href="https://www.coursera.org/projects/anomaly-detection-time-series-keras">Anomaly Detection in Time Series Data with Keras, Corsera</a></p>
+</li>
+<li>
+<p><a href="https://www.coursera.org/learn/applying-data-analytics-business-in-finance">Applying Data Analytics in Finance, Coursera</a></p>
+</li>
+<li>
+<p><a href="https://courses.analyticsvidhya.com/courses/creating-time-series-forecast-using-python">Time Series Forecasting using Python</a></p>
+</li>
+<li>
+<p><a href="https://online.stat.psu.edu/statprogram/stat510">STAT 510: Applied Time Series Analysis, PSU</a></p>
+</li>
+<li>
+<p><a href="https://www.edx.org/course/policy-analysis-using-interrupted-time-series">Policy Analysis Using Interrupted Time Series, edx</a></p>
+</li>
+</ul>
+<h2 id="code-resource">Code-Resource</h2>
+<ul>
+<li>
+<p><a href="https://dmbee.github.io/seglearn/">Seglearn: A Python Package for Learning Sequences and Time Series</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cesium-ml/cesium">cesium: Open-Source Platform for Time Series Inference</a></p>
+</li>
+<li>
+<p><a href="https://github.com/jdb78/pytorch-forecasting">PyTorch Forecasting: A Python Package for time series forecasting with PyTorch</a></p>
+</li>
+<li>
+<p><a href="https://github.com/LongxingTan/Time-series-prediction">A collection of time series prediction methods: rnn, seq2seq, cnn, wavenet, transformer, unet, n-beats, gan, kalman-filter</a></p>
+</li>
+<li>
+<p><a href="https://github.com/maxjcohen/transformer">Implementation of Transformer model (originally from Attention is All You Need) applied to Time Series</a></p>
+</li>
+<li>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0169207019301098">Predicting/hypothesizing the findings of the M4 Competition</a></p>
+</li>
+<li>
+<p><a href="https://github.com/RJT1990/pyflux">PyFlux</a></p>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/forecasting">Time Series Forecasting Best Practices &amp; Examples</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rob-med/awesome-TS-anomaly-detection">List of tools &amp; datasets for anomaly detection on time-series data</a></p>
+</li>
+<li>
+<p><a href="https://github.com/MaxBenChrist/awesome_time_series_in_python">python packages for time series analysis</a></p>
+</li>
+<li>
+<p><a href="https://github.com/alan-turing-institute/sktime">A scikit-learn compatible Python toolbox for machine learning with time series</a></p>
+</li>
+<li>
+<p><a href="https://github.com/facontidavide/PlotJuggler">time series visualization tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/alkaline-ml/pmdarima">A statistical library designed to fill the void in Python&rsquo;s time series analysis capabilities</a></p>
+</li>
+<li>
+<p><a href="https://github.com/chickenbestlover/RNN-Time-series-Anomaly-Detection">RNN based Time-series Anomaly detector model implemented in Pytorch</a></p>
+</li>
+<li>
+<p><a href="https://github.com/bashtage/arch">ARCH models in Python</a></p>
+</li>
+<li>
+<p><a href="https://github.com/arundo/adtk">A Python toolkit for rule-based/unsupervised anomaly detection in time series</a></p>
+</li>
+<li>
+<p><a href="https://github.com/xephonhq/awesome-time-series-database">A curated list of awesome time series databases, benchmarks and papers</a></p>
+</li>
+<li>
+<p><a href="https://github.com/matrix-profile-foundation/matrixprofile">Matrix Profile analysis methods in Python for clustering, pattern mining, and anomaly detection</a></p>
+</li>
+</ul>
+<h2 id="datasets">Datasets</h2>
+<ul>
+<li>
+<p><a href="https://data.world/data-society/us-air-pollution-data">U.S. Air Pollution Data</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/us-chronic-disease-data">U.S. Chronic Disease Data</a></p>
+</li>
+<li>
+<p><a href="http://archive.ics.uci.edu/ml/datasets/Air+Quality">Air quality from UCI</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zhiyongc/Seattle-Loop-Data">Seattle freeway traffic speed</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/youth-tobacco-survey-data">Youth Tobacco Survey Data</a></p>
+</li>
+<li>
+<p><a href="https://data.world/hxchua/populationsg">Singapore Population</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/airlines-delay">Airlines Delay</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/airplane-crashes">Airplane Crashes</a></p>
+</li>
+<li>
+<p><a href="https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014">Electricity dataset from UCI</a></p>
+</li>
+<li>
+<p><a href="https://archive.ics.uci.edu/ml/datasets/PEMS-SF">Traffic dataset from UCI</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/city-of-baltimore-crime-data">City of Baltimore Crime Data</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/discover-the-menu">Discover The Menu</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/global-climate-change-data">Global Climate Change Data</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/global-health-nutrition-data">Global Health Nutrition Data</a></p>
+</li>
+<li>
+<p><a href="https://raw.githubusercontent.com/jbrownlee/Datasets/master/pollution.csv">Beijing PM2.5 Data Set</a></p>
+</li>
+<li>
+<p><a href="https://github.com/jbrownlee/Datasets/blob/master/airline-passengers.csv">Airline Passengers dataset</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/government-finance-statistics">Government Finance Statistics</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/historical-public-debt-data">Historical Public Debt Data</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/kansas-city-crime-data">Kansas City Crime Data</a></p>
+</li>
+<li>
+<p><a href="https://data.world/data-society/nyc-crime-data">NYC Crime Data</a></p>
+</li>
+<li>
+<p><a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting">Kaggle-Web Traffic Time Series Forecasting</a></p>
+</li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/learning-path/">learning path</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/computer-science/">computer science</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/time-series-prediction/">time series prediction</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/it/">IT</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2022/04/mealpy-tutorials/" data-tooltip="Mealpy Tutorials" aria-label="NEXT: Mealpy Tutorials">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" data-tooltip="Cheat Sheet for Web Security" aria-label="PREVIOUS: Cheat Sheet for Web Security">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/thieu1995.github.io\/2021\/03\/cheat-sheet-for-time-series-forecasting\/';
+        
+          this.page.identifier = '\/2021\/03\/cheat-sheet-for-time-series-forecasting\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-thieu1995-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Nguyen Van Thieu. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2022/04/mealpy-tutorials/" data-tooltip="Mealpy Tutorials" aria-label="NEXT: Mealpy Tutorials">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2021/03/cheat-sheet-for-web-security/" data-tooltip="Cheat Sheet for Web Security" aria-label="PREVIOUS: Cheat Sheet for Web Security">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthieu1995.github.io%2F2021%2F03%2Fcheat-sheet-for-time-series-forecasting%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fthieu1995.github.io%2F2021%2F03%2Fcheat-sheet-for-time-series-forecasting%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fthieu1995.github.io%2F2021%2F03%2Fcheat-sheet-for-time-series-forecasting%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Nguyen Van Thieu</h4>
+    
+      <div id="about-card-bio">Lecturer at Faculty of Computer Science, Phenikaa University</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Lecturer, Researcher, Programmer, Gamer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Vietnam
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://thieu1995.github.io/img/side-banner.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://thieu1995.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

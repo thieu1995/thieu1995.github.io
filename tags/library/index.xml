@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>library on Thieu&#39;s Blog</title>
+    <link>https://thieu1995.github.io/tags/library/</link>
+    <description>Recent content in library on Thieu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thieu1995.github.io/tags/library/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Libraries</title>
+      <link>https://thieu1995.github.io/2022/05/python-libraries/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/05/python-libraries/</guid>
+      <description>A list of python libraries &amp;amp; frameworks! Source: @AfricaDataSch
+178 Python Projects with Source Code https://amankharwal.medium.com/130-python-projects-with-source-code-61f498591bb</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>optimization on Thieu&#39;s Blog</title>
+    <link>https://thieu1995.github.io/tags/optimization/</link>
+    <description>Recent content in optimization on Thieu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thieu1995.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mealpy Tutorials</title>
+      <link>https://thieu1995.github.io/2022/04/mealpy-tutorials/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/04/mealpy-tutorials/</guid>
+      <description>&lt;p&gt;Mealpy Tutorials&lt;/p&gt;
+&lt;p&gt;How to use Mealpy library to find global point for optimization problem&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
