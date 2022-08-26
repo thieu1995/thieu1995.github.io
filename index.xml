@@ -174,7 +174,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/pages/projects/</guid>
-      <description>Open-source libraries 1. MEALPY  A Collection of The State-Of-The-Art Meta-Heuristic Algorithms in Python (MEALPY) The biggest meta-heuristic algorithms library contains more than 150 algorithms. Link: Source Code  2. OPFUNU  A Collection of Benchmark Functions for Numerical Optimization Problems. Framework of Optimization Function in Numpy (OPFUNU) Currently, there are several CEC competition functions (2005/2008/2010/2013/2014/2015) Link: Source Code  3. PERMETRICS  A Framework of Performance Metrics (PerMetrics) for artificial intelligence models The biggest evaluation metrics library contains more than 30 metrics for Regression problems.</description>
+      <description>Open-source libraries1. MEALPY A Collection of The State-Of-The-Art Meta-Heuristic Algorithms in Python (MEALPY) The biggest meta-heuristic algorithms library contains more than 150 algorithms. Link: Source Code  2. OPFUNU A Collection of Benchmark Functions for Numerical Optimization Problems. Framework of Optimization Function in Numpy (OPFUNU) The biggest benchmark function library, contains all CEC competition functions from 2005, 2008, 2010, 2013, 2014, 2015, 2017, 2019, 2020, 2021, 2022.</description>
     </item>
     
     <item>
@@ -192,11 +192,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/pages/research/</guid>
-      <description>My Research directions   Machine Learning Techniques
- Supervised Learning Unsupervised Learning Transfer Learning    Deep Learning
- Neural Network and its variants (MLP, FLNN, SONIA, ELM, RBFN, CFNN) Deep Neural Network (DNN, CFNN) Recurrent-based Network (RNN, GRU, LSTM, CNN)    Natural Language Processing
- Word Segmentation Part-of-speech tagging Stemming Parsing Named entity recognition Sentiment analysis    Optimization
- Meta-heuristic Algorithms (Approximation algorithms, Nature-inspired computing, soft-computing) Multi-objective Optimization Convex programming (Linear programming) Combinatorial Optimization Robust Optimization    Applications</description>
+      <description>Research Directions and Interests Evolutionary ComputationThe development of algorithms inspired by biological evolution to solve computational problemsOptimizationThe study of methods to optimize the performance of machine learning modelsActive LearningPrioritizing data labelling to optimize the training of supervised modelsDeep LearningAlgorithms inspired by the structure and function of the brain referred to as artificial neural networksReinforcement LearningEnabling an agent to learn by trial and error using feedback from actions and experiencesNatural LanguageA field that gives machines the ability to read, understand and derive meaning from human languageTime SeriesThe use of machine learning methods in a manner that seeks to predict future valueGraphics &amp; VisualizationGenerating graphics with the aid of machine learningTechniques and Models Artificial Intelligence   Supervised Learning Unsupervised Learning Transfer Learning  Deep Learning Models  Neural Network (MLP, FLNN, SONIA, ELM, RBFN, CFNN, ANFIS, Hopfield) Deep Neural Network (DNN, CFNN) Recurrent-based Network (RNN, GRU, LSTM, CNN)  Optimization Branches  Meta-heuristic Algorithms (Approximation algorithms, Nature-inspired computing, soft-computing) Multi-objective Optimization Convex programming (Linear programming) Combinatorial Optimization Robust Optimization  Natural Language Processing  Word Segmentation Part-of-speech tagging Stemming and Parsing Named entity recognition Sentiment analysis  Applications  Benchmark functions optimization Engineering applications Log template generation for large-scale system Resources consumption management (decision making system) Time-series prediction (i.</description>
     </item>
     
     <item>
@@ -214,7 +210,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/pages/teaching/</guid>
-      <description></description>
+      <description>Teaching Courses at Phenikaa University  Fall 2022: Python for Data Analysis (CSE702031) Fall 2022: Introduction to Database (CSE703008) Fall 2022: Introduction to Data Science and Artificial Intelligence (CSE702003)  </description>
     </item>
     
   </channel>
