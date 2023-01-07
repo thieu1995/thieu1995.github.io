@@ -6,24 +6,11 @@
     <description>Recent content in Categories on Thieu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://thieu1995.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>AI</title>
-      <link>https://thieu1995.github.io/categories/ai/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://thieu1995.github.io/categories/ai/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://thieu1995.github.io/categories/blog/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/categories/blog/</guid>
       <description></description>
@@ -32,9 +19,72 @@
     <item>
       <title>computer science</title>
       <link>https://thieu1995.github.io/categories/computer-science/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/categories/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://thieu1995.github.io/categories/research/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://thieu1995.github.io/categories/data-science/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engineering</title>
+      <link>https://thieu1995.github.io/categories/engineering/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://thieu1995.github.io/categories/ai/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://thieu1995.github.io/categories/ml/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>information technology</title>
+      <link>https://thieu1995.github.io/categories/information-technology/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/information-technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmer</title>
+      <link>https://thieu1995.github.io/categories/programmer/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/categories/programmer/</guid>
       <description></description>
     </item>
     
@@ -44,15 +94,6 @@
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/categories/it/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML</title>
-      <link>https://thieu1995.github.io/categories/ml/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://thieu1995.github.io/categories/ml/</guid>
       <description></description>
     </item>
     

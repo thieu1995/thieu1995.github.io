@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data science on Thieu&#39;s Blog</title>
+    <link>https://thieu1995.github.io/categories/data-science/</link>
+    <description>Recent content in data science on Thieu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas Tips and Tricks</title>
+      <link>https://thieu1995.github.io/2022/06/pandas-tips-and-tricks/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/06/pandas-tips-and-tricks/</guid>
+      <description>&lt;p&gt;Here are some tips and tricks for Python &amp;amp; Pandas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Science In The Nutshell</title>
+      <link>https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/</guid>
+      <description>&lt;p&gt;Data Science In The Nutshell&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Data Science In The Nutshell",
+  
+  "datePublished": "2022-06-06T00:00:00Z",
+  "dateModified": "2022-06-06T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Nguyen Van Thieu",
+    
+    "image": "https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/thieu1995.github.io\/2022\/06\/data-science-in-the-nutshell\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thieu's Blog",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded"
+    }
+    
+  },
+  "description": "Data Science In The Nutshell\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.103.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Nguyen Van Thieu">
+<meta name="keywords" content="">
+<meta name="description" content="Data Science In The Nutshell">
+
+
+<meta property="og:description" content="Data Science In The Nutshell">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Science In The Nutshell">
+<meta name="twitter:title" content="Data Science In The Nutshell">
+<meta property="og:url" content="https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/">
+<meta property="twitter:url" content="https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/">
+<meta property="og:site_name" content="Thieu&#39;s Blog">
+<meta property="og:description" content="Data Science In The Nutshell">
+<meta name="twitter:description" content="Data Science In The Nutshell">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2022-06-06T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2022-06-06T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="blog">
+    
+      <meta property="article:section" content="computer science">
+    
+      <meta property="article:section" content="data science">
+    
+  
+  
+    
+      <meta property="article:tag" content="data science">
+    
+      <meta property="article:tag" content="resources">
+    
+      <meta property="article:tag" content="computer science">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=640">
+
+
+
+
+
+
+    <title>Data Science In The Nutshell</title>
+
+    <link rel="icon" href="https://thieu1995.github.io/img/favicon_io/favicon.ico">
+    
+
+    
+
+    <link rel="canonical" href="https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://thieu1995.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://thieu1995.github.io/css/bootstrap-grid.min.css">
+      
+    
+      
+        <link rel="stylesheet"  href="https://thieu1995.github.io/css/my_style.css">
+      
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-224078006-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://thieu1995.github.io/" aria-label="Go to homepage">Thieu&#39;s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://thieu1995.github.io/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://thieu1995.github.io/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Nguyen Van Thieu</h4>
+        
+          <h5 class="sidebar-profile-bio">Lecturer at Faculty of Computer Science, Phenikaa University</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/cv" title="CV">
+    
+      <i class="sidebar-button-icon fa fa-address-card"></i>
+      
+      <span class="sidebar-button-desc">CV</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/research" title="Research">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-registered"></i>
+      
+      <span class="sidebar-button-desc">Research</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/publications" title="Publications">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tasks"></i>
+      
+      <span class="sidebar-button-desc">Publications</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/projects" title="Projects">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-solid fa-laptop-code"></i>
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/pages/teaching" title="Teaching">
+    
+      <i class="sidebar-button-icon fa fa-university"></i>
+      
+      <span class="sidebar-button-desc">Teaching</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/categories/blog/" title="Blog">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-puzzle-piece"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/thieu1995" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://scholar.google.com/citations?user=nsTbdhgAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="GG Scholar">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-graduation-cap"></i>
+      
+      <span class="sidebar-button-desc">GG Scholar</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.researchgate.net/profile/Thieu_Nguyen6" target="_blank" rel="noopener" title="ResearchGate">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-flag-checkered"></i>
+      
+      <span class="sidebar-button-desc">ResearchGate</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://publons.com/researcher/3048975/nguyen-van-thieu/" target="_blank" rel="noopener" title="Publons">
+    
+      <i class="sidebar-button-icon fab fa-product-hunt"></i>
+      
+      <span class="sidebar-button-desc">Publons</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://loop.frontiersin.org/people/969519/" target="_blank" rel="noopener" title="Frontier">
+    
+      <i class="sidebar-button-icon fab fa-fonticons"></i>
+      
+      <span class="sidebar-button-desc">Frontier</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://orcid.org/0000-0001-9994-8747" target="_blank" rel="noopener" title="ORCID">
+    
+      <i class="sidebar-button-icon fab fa-opera"></i>
+      
+      <span class="sidebar-button-desc">ORCID</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://thieu1995.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Data Science In The Nutshell
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-06-06T00:00:00Z">
+        
+  June 6, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/blog">blog</a>, 
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/computer-science">computer science</a>, 
+    
+      <a class="category-link" href="https://thieu1995.github.io/categories/data-science">data science</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>Data Science In The Nutshell</p>
+<h2 id="1-heart-of-data-science">1. Heart of Data Science</h2>
+<p><img src="https://thieu1995.github.io/post/2022-06/img2.jpg" alt="HeartDS"></p>
+<h2 id="2-how-to-choose-the-proper-database-in-a-cloud-environment">2. How to choose the proper database in a cloud environment</h2>
+<ul>
+<li>A visual guide for AWS, Azure, and GCP</li>
+<li>When selecting a database, you should carefully consider your options since it is a long-term commitment.</li>
+<li>I would say that choosing the best database for you and your specific needs and requirements is essential.</li>
+</ul>
+<p><img src="https://thieu1995.github.io/post/2022-06/img3.jpg" alt="DatabaseSelection"></p>
+<h2 id="3-data-scientist-skillset">3. Data Scientist Skillset</h2>
+<p>🤔 What other skillsets would you add here?</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img4.jpg" alt="Skillset1"></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img16.jpg" alt="Skillset2"></p>
+<h2 id="4-32-datasets-to-improved-your-skills">4. 32 Datasets to Improved Your Skills</h2>
+<p>🔥 Look what&rsquo;s in-store for you all this weekend, 32 data sets for you to use to practice and improve your skills as a data scientist: <a href="https://hubs.la/Q01w-j3G0">https://hubs.la/Q01w-j3G0</a></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img5.jpg" alt="ImprovedSkills"></p>
+<h2 id="5-handling-missing-data">5. Handling Missing Data</h2>
+<p>An overview to handling missing data in machine learning!</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img6.jpg" alt="HandlingMissing"></p>
+<h2 id="6-data-science-pathway">6. Data Science Pathway</h2>
+<p>Get started with data science this new year with our data science pathway 2023: <a href="https://hubs.la/Q01wCPJT0">https://hubs.la/Q01wCPJT0</a></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img7.jpg" alt="Pathway"></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img11.jpg" alt="Pathway"></p>
+<h2 id="7-visualization-data">7. Visualization Data</h2>
+<p>💥 33 tools to visualize data: <a href="https://hubs.la/Q01wRWhp0">https://hubs.la/Q01wRWhp0</a></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img8.jpg" alt="Visualization1"></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img9.jpg" alt="Visualization2"></p>
+<h2 id="7-ml-libraries">7. ML Libraries</h2>
+<p>💡 An overview of machine learning libraries and purpose!</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img10.jpg" alt="Libraries1"></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img12.jpg" alt="Libraries2"></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img14.jpg" alt="Libraries3"></p>
+<h2 id="8-ml-algorithms-types">8. ML Algorithms Types</h2>
+<p>💥 Different types of algorithm!</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img13.jpg" alt="AlgorithmTypes"></p>
+<h2 id="9-ai-overview">9. AI Overview</h2>
+<p>💡 An overview to AI!</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img15.jpg" alt="Overview1"></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img18.jpg" alt="Overview2"></p>
+<h2 id="10-algorithm-flowchart">10. Algorithm Flowchart</h2>
+<p>💥An overview of flowchart algorithms!</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img17.jpg" alt="Flowchart"></p>
+<h2 id="11-self-learning">11. self Learning</h2>
+<p>💥 A comprehensive guide to learning data analytics!</p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img19.jpg" alt="SelfLearning"></p>
+<h2 id="12-emerging-ai-in-2023">12. Emerging AI in 2023</h2>
+<p>💥2023 emerging AI and Machine Learning trends: <a href="https://hubs.la/Q01v6k090">https://hubs.la/Q01v6k090</a></p>
+<p><img src="https://thieu1995.github.io/post/2022-06/img20.jpg" alt="EmergingAI"></p>
+<h4 id="credits">Credits:</h4>
+<ul>
+<li>Data Science Dojo (LinkedIn)</li>
+<li>Satish Chandra Gupta (LinkedIn)</li>
+<li>Chanin Nantasenamat (LinkedIn)</li>
+<li>datawdash (LinkedIn)</li>
+<li>Scientist Cafe</li>
+<li>Steve Nouri</li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/data-science/">data science</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/resources/">resources</a>
+
+  <a class="tag tag--primary tag--small" href="https://thieu1995.github.io/tags/computer-science/">computer science</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2022/06/pandas-tips-and-tricks/" data-tooltip="Pandas Tips and Tricks" aria-label="NEXT: Pandas Tips and Tricks">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2022/06/cheat-sheet-regularization-in-ml/" data-tooltip="Cheat Sheet - Regularization in ML" aria-label="PREVIOUS: Cheat Sheet - Regularization in ML">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/thieu1995.github.io\/2022\/06\/data-science-in-the-nutshell\/';
+        
+          this.page.identifier = '\/2022\/06\/data-science-in-the-nutshell\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'https-thieu1995-github-io';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 Nguyen Van Thieu. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2022/06/pandas-tips-and-tricks/" data-tooltip="Pandas Tips and Tricks" aria-label="NEXT: Pandas Tips and Tricks">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://thieu1995.github.io/2022/06/cheat-sheet-regularization-in-ml/" data-tooltip="Cheat Sheet - Regularization in ML" aria-label="PREVIOUS: Cheat Sheet - Regularization in ML">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thieu1995.github.io/2022/06/data-science-in-the-nutshell/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthieu1995.github.io%2F2022%2F06%2Fdata-science-in-the-nutshell%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fthieu1995.github.io%2F2022%2F06%2Fdata-science-in-the-nutshell%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fthieu1995.github.io%2F2022%2F06%2Fdata-science-in-the-nutshell%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/435730f573f686aa570b7607ed361ded?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Nguyen Van Thieu</h4>
+    
+      <div id="about-card-bio">Lecturer at Faculty of Computer Science, Phenikaa University</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Lecturer, Researcher, Programmer, Gamer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Vietnam
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://thieu1995.github.io/img/side-banner.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://thieu1995.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

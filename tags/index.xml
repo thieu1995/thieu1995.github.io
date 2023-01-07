@@ -6,17 +6,94 @@
     <description>Recent content in Tags on Thieu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://thieu1995.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>computer science</title>
       <link>https://thieu1995.github.io/tags/computer-science/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://thieu1995.github.io/tags/machine-learning/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://thieu1995.github.io/tags/python/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resources</title>
+      <link>https://thieu1995.github.io/tags/resources/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://thieu1995.github.io/tags/data-science/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engineering</title>
+      <link>https://thieu1995.github.io/tags/engineering/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>youtube links</title>
+      <link>https://thieu1995.github.io/tags/youtube-links/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/youtube-links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://thieu1995.github.io/tags/devops/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmer</title>
+      <link>https://thieu1995.github.io/tags/programmer/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/programmer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web development</title>
+      <link>https://thieu1995.github.io/tags/web-development/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/tags/web-development/</guid>
       <description></description>
     </item>
     
@@ -26,33 +103,6 @@
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://thieu1995.github.io/tags/library/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://thieu1995.github.io/tags/machine-learning/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://thieu1995.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://thieu1995.github.io/tags/python/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://thieu1995.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>resources</title>
-      <link>https://thieu1995.github.io/tags/resources/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://thieu1995.github.io/tags/resources/</guid>
       <description></description>
     </item>
     

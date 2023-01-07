@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineering on Thieu&#39;s Blog</title>
+    <link>https://thieu1995.github.io/categories/engineering/</link>
+    <description>Recent content in engineering on Thieu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheat Sheet - Regularization in ML</title>
+      <link>https://thieu1995.github.io/2022/06/cheat-sheet-regularization-in-ml/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/06/cheat-sheet-regularization-in-ml/</guid>
+      <description>&lt;p&gt;Data Science (Regularization in ML - L1, L2, Entropy Loss, K-Fold cross-validation, Dropout)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Best Data Engineering Youtube Channels</title>
+      <link>https://thieu1995.github.io/2022/06/best-data-engineering-youtube-channels/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/06/best-data-engineering-youtube-channels/</guid>
+      <description>&lt;p&gt;Best Data Engineering Youtube Channels to subscribe right now&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

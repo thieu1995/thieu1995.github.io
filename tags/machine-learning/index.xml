@@ -6,10 +6,27 @@
     <description>Recent content in machine learning on Thieu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1 - How To Read A Research Paper?</title>
+      <link>https://thieu1995.github.io/2023/01/week-1-how-to-read-a-research-paper/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2023/01/week-1-how-to-read-a-research-paper/</guid>
+      <description>&lt;p&gt;A guide to help you how to read a research paper.&lt;/p&gt;</description>
+    </item>
     
-	<atom:link href="https://thieu1995.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Robots &amp; AI resources</title>
+      <link>https://thieu1995.github.io/2022/06/robots-ai-resources/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2022/06/robots-ai-resources/</guid>
+      <description>&lt;p&gt;Incredibly cool, but you have to learn reinforcement learning.
+These 3 top courses take you from beginner to research.
+Learn how computers think and robots learn, exploring new environments! 🦾
+(With a bonus applied course in the making!)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ML Resources</title>
