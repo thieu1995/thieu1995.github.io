@@ -2,22 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thieu1995.github.io/tags/avatar/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/2023/08/avatar-for-libraries/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/blog/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://thieu1995.github.io/categories/blog/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/categories/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/tags/computer-science/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/categories/computer-science/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://thieu1995.github.io/tags/machine-learning/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
+    <loc>https://thieu1995.github.io/tags/enoppy/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/categories/it/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/mafese/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/mealpy/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/metacluster/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/metaheuristic-algorithm/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/categories/metaheuristics/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/opfunu/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/optimization/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/permetrics/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/pfevaluator/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/posts/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/youtube/</loc>
+    <lastmod>2023-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://thieu1995.github.io/tags/machine-learning/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/tags/python/</loc>
@@ -27,12 +78,6 @@
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/tags/resources/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/tags/</loc>
-    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/2023/01/week-1-how-to-read-a-research-paper/</loc>
@@ -92,9 +137,6 @@
     <loc>https://thieu1995.github.io/2022/06/youtube-links-to-learn-devops/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://thieu1995.github.io/categories/it/</loc>
-    <lastmod>2022-05-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://thieu1995.github.io/tags/library/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -104,25 +146,7 @@
     <loc>https://thieu1995.github.io/2022/05/python-libraries/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://thieu1995.github.io/tags/blog/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/tags/mealpy/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://thieu1995.github.io/2022/04/mealpy-tutorials/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/tags/metaheuristic-algorithm/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/categories/metaheuristics/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/tags/optimization/</loc>
-    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://thieu1995.github.io/tags/youtube/</loc>
     <lastmod>2022-04-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://thieu1995.github.io/2021/03/cheat-sheet-for-time-series-forecasting/</loc>
