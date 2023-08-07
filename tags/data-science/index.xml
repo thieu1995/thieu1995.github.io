@@ -6,7 +6,16 @@
     <description>Recent content in data science on Thieu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://thieu1995.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Science Pocket Dictionary</title>
+      <link>https://thieu1995.github.io/2023/08/data-science-pocket-dictionary/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://thieu1995.github.io/2023/08/data-science-pocket-dictionary/</guid>
+      <description>&lt;p&gt;📚 Excited to share the &amp;ldquo;Data Science Pocket Dictionary&amp;rdquo;! 🧠📖&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pandas Tips and Tricks</title>
       <link>https://thieu1995.github.io/2022/06/pandas-tips-and-tricks/</link>
