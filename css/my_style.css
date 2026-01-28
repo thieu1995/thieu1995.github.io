@@ -72,6 +72,16 @@ h3.highlight_line {
     color: #231e1ebd;
 }
 
+.sr_sub_title {
+    font-family: 'Benton Sans Bk', 'Libre Franklin', sans-serif;
+    font-size: 18px; font-weight:600; padding: 4px; border-left: 3px solid;
+    background-color: #fdf1d8;
+    border-color: #f5aa0a;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
 .rs_rec_wrapper {
     margin-top: 8px;
     overflow: auto;
